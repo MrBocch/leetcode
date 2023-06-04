@@ -14,3 +14,10 @@ class Solution:
                 unique[char] = True
         
         return max_unique
+        # test case fails
+        # s = " "
+        # s = "au"
+
+        # The problem is that its possible 
+        # we the entire string is the substring
+        # our code does not account for that
