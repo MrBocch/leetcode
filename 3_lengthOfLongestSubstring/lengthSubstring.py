@@ -3,6 +3,7 @@ class Solution:
         unique = {}
         max_unique = 0
 
+        
         for i in range(len(s)):
             char = s[i]
             if char in unique:
@@ -21,3 +22,14 @@ class Solution:
         # The problem is that its possible 
         # we the entire string is the substring
         # our code does not account for that
+
+        # this is all wrong
+
+        #test case
+        #"dvdf"
+        #the set will be equal to
+        # d, f
+        # it should be
+        # vdf
+        
+        #meaning we have to go thrue the entire thing
