@@ -1,5 +1,8 @@
 # @param {Integer[]} nums
 # @return {Boolean}
 def is_monotonic(nums)
-  return (nums == nums.sort or nums == nums.sort.reverse)
+  # very tiny improvement
+  snums = nums.sort
+  return (nums == snums or nums == snums.reverse)
 end
+
