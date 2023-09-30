@@ -1,0 +1,11 @@
+is love this solution 
+
+bool isMonotonic(int* nums, int size) {
+    bool increasing = false, decreasing = false;
+    for (int i = 1; i < size; i++) {
+        if (nums[i] > nums[i - 1]) increasing = true;
+        if (nums[i] < nums[i - 1]) decreasing = true;
+    }
+    return !(increasing & decreasing);
+}
+
