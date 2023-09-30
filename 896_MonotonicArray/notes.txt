@@ -9,3 +9,8 @@ bool isMonotonic(int* nums, int size) {
     return !(increasing & decreasing);
 }
 
+i would of thought my C solution would of been much more faster but its not
+
+Language    Runtime   Memory
+C	    116 ms    14.5 MB
+Ruby        157 ms     236 MB
