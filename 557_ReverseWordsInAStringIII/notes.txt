@@ -2,3 +2,5 @@
 
 im soo happy about my python helper, maybe could even automate pushing 
 to github
+
+others used .map{} did not think of that 
