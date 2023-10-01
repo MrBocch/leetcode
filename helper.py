@@ -77,6 +77,7 @@ def oldNewLang():
 
         print("Do you have other solutions? (y/n) ")
         nsol = input("> ")
+
 banner = '''
 ====================
 = LEETCODE MANAGER =
