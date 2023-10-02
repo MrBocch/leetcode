@@ -1,0 +1,9 @@
+...
+
+2023-10-01
+
+It has occured to me that i could sort the list, then check one by one 
+if element is equal to its neighbor, although its slower than my other 
+solutions, i think its interesting. The advantage it has over my first 
+solution is that it, uses less space, sorting the array in place instead
+of creating a hashmap 
