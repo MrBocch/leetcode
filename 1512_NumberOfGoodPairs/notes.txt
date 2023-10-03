@@ -8,5 +8,15 @@ and using a bruteforce solution in this case is ok.
 What would a not bruteforce solution look like?
 is another type of solution possible?
 
-counting frequency?
+counting frequency of each number?
+
+I would have not been able to solve this if it were not for the 
+formula in the hint
+
+i was going to naively, divide by 2 the amount of times a number appears
+but this does not take into account that, i need to count the pairs, 
+the number that is in one pair could belong to another pair
+
+n * (n – 1) // 2
+
 
