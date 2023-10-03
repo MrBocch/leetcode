@@ -12,6 +12,7 @@ import pyperclip as pc
 # 1512
 # 557
 # when i click the copy button the bug will show up
+# also when i copy manually
 def getSol():
     sol = pc.paste()
     sol = sol.replace('\r\n', '\r')
