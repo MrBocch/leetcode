@@ -2,6 +2,12 @@ import os
 from datetime import date
 import pyperclip as pc
 
+# there is an issue where, in the github code
+# the code shows up without any newlines
+# how annoying 
+# when does this problem occur?
+# and why?
+
 def solvedNew():
     n     = input("Problem number: ")
     name  = input("Problem name (PascalCase): ")
