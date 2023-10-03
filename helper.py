@@ -15,6 +15,13 @@ def getSol():
     sol = sol.replace('\r\n', '\n')
     return sol
 
+def pushToGit():
+    print(os.system("git status"))
+    os.system("git add .")
+    m = input("msg> ")
+    os.system(f"git commit -m {m}")
+    os.system("git push")
+
 def solvedNew():
     n     = input("Problem number: ")
     name  = input("Problem name (PascalCase): ")
@@ -97,6 +104,7 @@ print(banner)
 while not exit:
     print("(1). Solved a new problem")
     print("(2). Solved a old problem in diff new lang")
+    print("(4). Push to github")
     print("(3). Exit")
     op = int(input("> "))
     if op == 3:
@@ -107,3 +115,6 @@ while not exit:
 
     if op == 2:
         oldNewLang()
+
+    if op == 4:
+        pushToGit()
