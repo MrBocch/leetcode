@@ -7,9 +7,6 @@ import pyperclip as pc
 # how annoying 
 # when does this problem occur?
 # and why?
-
-# bug shows up in
-# 1512
 # https://stackoverflow.com/questions/60846450/github-why-does-my-python-code-have-m-and-no-new-lines
 # https://blog.boot.dev/clean-code/line-breaks-vs-code-lf-vs-crlf/
 # i hate windows
