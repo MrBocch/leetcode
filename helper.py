@@ -99,16 +99,16 @@ banner = '''
 ====================
 '''
 
-exit = False
+stay = True 
 print(banner)
-while not exit:
+while stay:
     print("(1). Solved a new problem")
     print("(2). Solved a old problem in diff new lang")
     print("(3). Push to github")
     print("(4). Exit")
     op = int(input("> "))
     if op == 4:
-        exit = True
+        stay = False 
     
     if op == 1:
         solvedNew()
