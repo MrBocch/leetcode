@@ -18,8 +18,8 @@ def getSol():
 def pushToGit():
     print(os.system("git status"))
     os.system("git add .")
-    m = input("msg> ")
-    os.system(f"git commit -m {m}")
+    m = input("commit msg> ")
+    os.system(f"git commit -m \"{m}\"")
     os.system("git push")
 
 def solvedNew():
@@ -104,10 +104,10 @@ print(banner)
 while not exit:
     print("(1). Solved a new problem")
     print("(2). Solved a old problem in diff new lang")
-    print("(4). Push to github")
-    print("(3). Exit")
+    print("(3). Push to github")
+    print("(4). Exit")
     op = int(input("> "))
-    if op == 3:
+    if op == 4:
         exit = True
     
     if op == 1:
@@ -116,5 +116,5 @@ while not exit:
     if op == 2:
         oldNewLang()
 
-    if op == 4:
+    if op == 3:
         pushToGit()
