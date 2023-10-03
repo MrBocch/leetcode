@@ -8,6 +8,15 @@ import pyperclip as pc
 # when does this problem occur?
 # and why?
 
+# bug shows up in
+# 1512
+# 557
+# when i click the copy button the bug will show up
+def getSol():
+    sol = pc.paste()
+    sol = sol.replace('\r\n', '\r')
+    return sol
+
 def solvedNew():
     n     = input("Problem number: ")
     name  = input("Problem name (PascalCase): ")
@@ -18,10 +27,8 @@ def solvedNew():
 
     print("Make sure to have solution in clipboard b4 type extension")
     ext = input("extension .")
-    sol = pc.paste()
+    sol = getSol()
 
-    # adding unexpected newlines, when writing to file 
-    sol = sol.replace('\r\n', '\r')
     with open(f"{fname}/{n}.{ext}", "w") as f:
         f.write(sol)
     
@@ -35,8 +42,7 @@ def solvedNew():
     while nsol == "y":
         print("Make sure to have solution in clipboard b4 type extension")
         ext = input("extension .")
-        sol = pc.paste()       
-        sol = sol.replace('\r\n', '\r')
+        sol = getSol()      
         with open(f"{fname}/{n}.{ext}", "w") as f:
             f.write(sol)
 
@@ -65,8 +71,7 @@ def oldNewLang():
 
     print("Make sure to have solution in clipboard b4 type extension")
     ext = input("extension .")
-    sol = pc.paste()
-    sol = sol.replace('\r\n', '\r')
+    sol = getSol()
 
     with open(f"{folder}/{fnum}.{ext}", "w") as f:
         f.write(sol)
@@ -76,8 +81,7 @@ def oldNewLang():
     while nsol == "y":
         print("Make sure to have solution in clipboard b4 type extension")
         ext = input("extension .")
-        sol = pc.paste()       
-        sol = sol.replace('\r\n', '\r')
+        sol = getSol()      
         with open(f"{folder}/{fnum}.{ext}", "w") as f:
             f.write(sol)
 
