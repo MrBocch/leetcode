@@ -1,1 +1,17 @@
-# @param {Integer[]} nums# @return {Integer}def num_identical_pairs(nums)  good = 0  nums.length.times do |i|    (i+1).upto( (nums.length)-1 ) do |j|      if nums[i] == nums[j] then good += 1 end    end  end  return goodend
+# @param {Integer[]} nums
+# @return {Integer}
+def num_identical_pairs(nums)
+  freq = Hash.new(0)
+
+  nums.each{ |n| 
+    freq[n] += 1 
+  }
+
+  good = 0
+
+  freq.each_value{ |n|
+    good += (n * (n-1))/2
+  }
+
+  return good 
+end
