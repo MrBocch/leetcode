@@ -1,0 +1,16 @@
+2023-10-04
+
+felt kinda bad for the first solution
+so i thought using a hashmap to count how many times 
+a letter appears in strings would be faster
+
+looking at solutions i found this very cleaver and 
+beatifull solution
+
+def is_anagram(s, t)
+  return false unless s.length == t.length
+
+  ('a'..'z').each { |c| return false if s.count(c) != t.count(c) }
+
+  true
+end
