@@ -1,0 +1,14 @@
+2023-10-05
+
+My first leetcode medium
+
+So this solution is O(n) time but also O(n) space
+
+my first solution was actually
+
+def majority_element(nums)
+  return nums.filter{|n| nums.count(n) > nums.length/3}.uniq 
+end
+
+i believe this to be space complexity of zero if we use "!" at end of filter adn uniq
+but its too slow, i think its due to nums.count()
