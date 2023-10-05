@@ -12,3 +12,9 @@ end
 
 i believe this to be space complexity of zero if we use "!" at end of filter adn uniq
 but its too slow, i think its due to nums.count()
+
+found another oneline solution, we had the same idea but i had no idea .tally was a thing
+def majority_element(nums)
+   nums.tally.select do |k, v| v > nums.size / 3 end.keys 
+end
+i used filter() instead of select() but they are the same 
