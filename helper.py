@@ -17,7 +17,7 @@ def getSol():
 
 def pushToGit():
     print("pulling changes in repo")
-    print(os.system("git pull")
+    print(os.system("git pull"))
     print(os.system("git status"))
     os.system("git add .")
     m = input("commit msg> ")
