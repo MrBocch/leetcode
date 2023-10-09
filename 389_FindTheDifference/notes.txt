@@ -1,1 +1,15 @@
 2023-10-08
+
+could simply put it all in one line like this, but its a little unwieldy
+# @param {String} s
+# @param {String} t
+# @return {Character}
+def find_the_difference(s, t)
+  return (t.split("").tally.to_a - s.split("").tally.to_a)[0][0]
+end
+
+.tally() method is so helpful
+
+feeling kinda bad using so many abstractions.
+
+Expected to be around the slowest solution but its not 
