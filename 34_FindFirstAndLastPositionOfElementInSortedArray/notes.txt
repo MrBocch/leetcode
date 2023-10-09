@@ -6,6 +6,12 @@ for making such a silly mistake, i suspect mid never reaches the last element in
 my head hurts to much to check why
 I must rewrite this oneday, this is really emberassing 
 
+Anyways my idea was that, you can binarysearch for element in array
+but you would not know if, the returned index is the [start, middle, end]
+so i would returned index is not at the start, subtract until nums[start-1] != target
+then from the start loop untill reach end of array or nums[start+1] != target
+
+
 # @param {Integer[]} nums
 # @param {Integer} target
 # @return {Integer[]}
