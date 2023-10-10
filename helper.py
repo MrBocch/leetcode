@@ -67,7 +67,10 @@ def oldNewLang():
     print("Make sure to have solution in clipboard b4 type extension")
     ext = input("extension .")
     sol = getSol()
-
+    
+    # should probably check to make sure there is not 
+    # already, a file with same name before creating file
+    # but im assuming I remember if i did so or not, (should probaby fix tis)
     opt = input("if already done with the same language before, or want add description? (y/n): ")
     if opt == "y":
         des = input(f"Enter description {fnum}_")
