@@ -11,6 +11,7 @@ but you would not know if, the returned index is the [start, middle, end]
 so i would returned index is not at the start, subtract until nums[start-1] != target
 then from the start loop untill reach end of array or nums[start+1] != target
 
+I know how easy this is, just fix binary search, the rest is trivial
 
 # @param {Integer[]} nums
 # @param {Integer} target
