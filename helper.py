@@ -21,40 +21,28 @@ def pushToGit():
     print(os.system("git status"))
     os.system("git add .")
     m = input("commit msg> ")
-    os.system(f"git commit -m \"{m}\"")
+    os.system(f'git commit -m "{m}"')
     os.system("git push")
 
 def solvedNew():
-    n     = input("Problem number: ")
-    name  = input("Problem name (PascalCase): ")
-    fname = f"{n}_{name}"
+    n      = input("Problem number: ")
+    name   = input("Problem name (PascalCase): ")
+    folder = f"{n}_{name}"
 
-    print("Folder created "+ fname)
-    os.mkdir(fname)
+    print("Folder created "+ folder)
+    os.mkdir(folder)
 
     print("Make sure to have solution in clipboard b4 type extension")
     ext = input("extension .")
     sol = getSol()
 
-    with open(f"{fname}/{n}.{ext}", "w") as f:
+    with open(f"{folder}/{n}.{ext}", "w") as f:
         f.write(sol)
     
     # also create notes
-    with open(f"{fname}/notes.txt", "w") as f:
+    with open(f"{folder}/notes.txt", "w") as f:
         today = str(date.today()) + "\n"
         f.write(today)
-
-    print("Do you have other solutions? (y/n) ")
-    nsol = input("> ")
-    while nsol == "y":
-        print("Make sure to have solution in clipboard b4 type extension")
-        ext = input("extension .")
-        sol = getSol()      
-        with open(f"{fname}/{n}.{ext}", "w") as f:
-            f.write(sol)
-
-        print("Do you have other solutions? (y/n) ")
-        nsol = input("> ")
 
 # what if already solved but with a different language?
 def oldNewLang():
@@ -80,20 +68,16 @@ def oldNewLang():
     ext = input("extension .")
     sol = getSol()
 
-    with open(f"{folder}/{fnum}.{ext}", "w") as f:
-        f.write(sol)
- 
-    print("Do you have other solutions? (y/n) ")
-    nsol = input("> ")
-    while nsol == "y":
-        print("Make sure to have solution in clipboard b4 type extension")
-        ext = input("extension .")
-        sol = getSol()      
+    opt = input("if already done with the same language before, or want add description? (y/n): ")
+    if opt == "y":
+        des = input(f"Enter description {fnum}_")
+        with open(f"{folder}/{fnum}_{des}.{ext}", "w") as f:
+            f.write(sol)
+    elif opt == "n":
         with open(f"{folder}/{fnum}.{ext}", "w") as f:
             f.write(sol)
-
-        print("Do you have other solutions? (y/n) ")
-        nsol = input("> ")
+    else:
+        print("type correctly")
 
 banner = '''
 ====================
