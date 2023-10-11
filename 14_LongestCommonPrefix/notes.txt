@@ -3,6 +3,11 @@
 Not proud of my solution,
 struggled abit with traversing matrix.
 
-I cant think of another method to solving this
+I cant think of another method to solving this.
+
+a small change could be
+smallestString = (strs.sort_by {|s| s.length})[0].length-1   
+dont theres much difference, probably slower?
+knowing how .min{} implemented, whats happening under the hood 
 
 If strs.length were much bigger than 200, what would happen?
