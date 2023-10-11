@@ -1,0 +1,8 @@
+2023-10-11
+
+Not proud of my solution,
+struggled abit with traversing matrix.
+
+I cant think of another method to solving this
+
+If strs.length were much bigger than 200, what would happen?
