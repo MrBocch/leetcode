@@ -1,0 +1,6 @@
+2023-10-14
+
+this is hilarious
+
+comback and solve without calling 1,000 methods
+thinking looping thrue array adding eachother and carring over if a[-1] + a2[-1] > 9
