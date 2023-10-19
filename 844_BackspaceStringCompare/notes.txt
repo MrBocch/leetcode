@@ -5,3 +5,5 @@ i believe my solution is O(n) time but O(n) space, idk how you would do it
 in O(1) space
 
 i saw somebody used ternary expresion which is more readable and smaller
+
+this is like a easier version of valid parenthesis problem
