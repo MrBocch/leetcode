@@ -1,0 +1,7 @@
+2023-10-19
+
+Follow up: Can you solve it in O(n) time and O(1) space
+i believe my solution is O(n) time but O(n) space, idk how you would do it
+in O(1) space
+
+i saw somebody used ternary expresion which is more readable and smaller
