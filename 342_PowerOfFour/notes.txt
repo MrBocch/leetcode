@@ -36,4 +36,19 @@ i dont get how its just as fast this is if looping, and then looping again with 
 
 im curius as to how Math.log() and the arithmetic ** are implemented (what happens under the hood)
 
- 
+i found this other one that is very interesting because i dont understand it 
+# @param {Integer} n
+# @return {Boolean}
+def is_power_of_four(n)
+   return false if n <= 0
+
+  if (n & (n - 1)) == 0
+    return (n & 0x55555555) != 0
+  end
+
+  return false
+end
+
+what is the magic number 0x555555555 for
+(true & true) # => true
+^ did not knew this sintax
