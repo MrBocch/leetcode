@@ -1,0 +1,39 @@
+2023-10-22
+
+not good with math so i had to google what is the opposite of 
+exponents https://math.stackexchange.com/questions/956776/whats-the-inverse-operation-of-exponents
+
+solution is relativly fast compared to other solutions by others
+40ms
+
+the other top solutions are weird
+
+# @param {Integer} n
+# @return {Boolean}
+def is_power_of_four(n)
+
+  array = [1]
+  start = 4
+  i = 1
+  # 因為數字開平方下去其實數字膨脹的很快，所以一直開平方不會花太多資源跟時間
+  # 這邊新增 4 的平方進 array，直到 array 的最後一個 element 比 n 小時
+  while array[-1] < n
+    array << start**i
+    i += 1
+  end
+  array.find_index(n) ? true : false
+
+  # 上面寫法是自己想到的，靈感來自有人直接這樣寫
+  #  {
+  #   1=> true, 4=> true, 16=> true, 64=> true, 256=> true, 1024=> true, 4096=> true, 16384=> true,
+  #   65536=> true, 262144=> true, 1048576=> true, 4194304=> true, 16777216=> true, 67108864=> true,
+  #   268435456=> true, 1073741824=> true, 4294967296=> true, 17179869184=> true, 68719476736=> true,
+  #   274877906944 => true
+  #  }[n] ? true : false
+end
+
+i dont get how its just as fast this is if looping, and then looping again with #.find_index(n)
+
+im curius as to how Math.log() and the arithmetic ** are implemented (what happens under the hood)
+
+ 
