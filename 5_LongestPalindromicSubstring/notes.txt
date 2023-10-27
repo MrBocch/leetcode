@@ -1,0 +1,10 @@
+2023-10-27
+
+My code is very slow, exceeds time limit
+yet i dont know how to make it faster
+
+very slow when s.length is too big, is 
+my algorithm n^2?, i thought my code would 
+of not been so bad because [1 <= s.length <= 1000]
+
+i will comeback
