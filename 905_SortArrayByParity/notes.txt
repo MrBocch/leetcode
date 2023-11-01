@@ -1,0 +1,5 @@
+...
+11/1/2023
+
+wanted to solve this imperativly in C 
+but i think i forgor how to code in C (skull emoji)
