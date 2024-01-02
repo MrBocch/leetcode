@@ -1,0 +1,13 @@
+2024-01-01
+
+I remember skimming The Algorithm Design Manual
+by Steven S. Skiena, and I read that they are 
+certain problems that become trivial to solve 
+if you sort the input first. I thought that was 
+very interesting.
+
+I been learning some haskell for a while 
+so I asked my self how would i solve this 
+in haskell or atleast in a functional manner
+
+I have no idea. will come back to this
