@@ -1,0 +1,20 @@
+2024-01-15
+
+.rb
+I dont understand why it wont work,
+I know that there is something is going wrong when 
+im dividing, could solve the test cases but 
+one test case is soo long to check by hand what is going wrong 
+
+could a statically typed language help here 
+
+temp[-2].div temp[-1] does not work either 
+
+am I doing something else wrong other than the division ????
+what edgecase am i missing here ?
+
+idk about adding methods to Array class in a real world enviorment
+i just think its so neat 
+
+i solved it, you were getting to saucy with it, 
+with "clever code" its not so clear what is was going wrong
