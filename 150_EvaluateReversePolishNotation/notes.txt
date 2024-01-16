@@ -18,3 +18,17 @@ i just think its so neat
 
 i solved it, you were getting to saucy with it, 
 with "clever code" its not so clear what is was going wrong
+too saucy 
+# want to drop the last 2 from the list 
+stack = stack.reverse.drop(2) 
+# i dont know how i forgot to reverse 
+# it back 
+stack = stack.reverse.drop(2).reverse 
+
+anyways this is really slow reversing it 
+twice 
+
+i dont understand why this would not fail 
+on first few cases then it would later on
+
+reminder to first keep it very simple 
