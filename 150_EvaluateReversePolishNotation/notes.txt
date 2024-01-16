@@ -1,5 +1,9 @@
 2024-01-15
 
+in
+Learn You a Haskell For Good 
+they solve this in Haskell
+
 .rb
 I dont understand why it wont work,
 I know that there is something is going wrong when 
