@@ -2,3 +2,6 @@
 
 This SQL 50 seems interesting 
 will certaintly come do these.
+
+also i had no idea that 
+pandas was a thing 
