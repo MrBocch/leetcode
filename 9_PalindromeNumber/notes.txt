@@ -1,0 +1,20 @@
+...
+1/28/2024
+
+very new to rust so i dont understand several 
+things about the language like this E0716 error 
+my guess its something to do with ownership
+
+seen other solutions in which they use math
+to solve it instead of turning it into a string
+i dont get it.
+
+this is most like my ruby solution 
+
+impl Solution {
+    pub fn is_palindrome(x: i32) -> bool {
+        x == x.to_string().chars().rev().collect::<String>().parse().unwrap_or(0)
+    }
+}
+
+rust is nothing like what i have experience in 
