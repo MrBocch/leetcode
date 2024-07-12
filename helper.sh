@@ -4,19 +4,27 @@ PNUM=
 PNAME=
 PLANG=
 
-_get_name(){
+_get_num(){
     echo "insert number"
     read PNUM
     echo
+}
 
-    echo "insert NameOfProblem"
+_get_name() {
+    echo "insert name"
     read PNAME
     echo
+}
 
+_get_lang(){
     echo "insert extension, ex: [py | rb | hs | rs]"
     echo "make sure to have code in clipboard"
     read PLANG
     echo
+}
+
+_search(){
+    ls -d $1_* 2>/dev/null
 }
 
 _paste(){
@@ -24,7 +32,6 @@ _paste(){
         pbpaste > $FILE
     else
         xclip -selection clipboard -o > $FILE
-        # echo "linux"
     fi
 }
 
@@ -38,10 +45,32 @@ _main(){
 
         case $c in
             1)
+                _get_num
+                _get_name
+                _get_lang
+                FOLDER="${PNUM}_${PNAME}"
+                FILE="${PNUM}.${PLANG}"
+                mkdir $FOLDER
+                (cd $FOLDER && _paste)
+                date -I > "$FOLDER/notes.txt"
                 ;;
             2)
+                _get_num
+                FOLDER=$(_search $PNUM)
+                if [ -z $FOLDER ]; then
+                    echo "No such problem"
+                else
+                    echo "make sure not to overwrite"
+                    (cd $FOLDER && ls)
+                    _get_name
+                    _get_lang
+                    # how to prevent overwriting file?
+                    FILE="${PNAME}.${PLANG}"
+                    (cd $FOLDER && _paste)
+                fi
                 ;;
             3)
+                git pull
                 git add .
                 git commit
                 git push
@@ -54,13 +83,6 @@ _main(){
                 ;;
         esac
     done
-    _get_name
-    FOLDER="${PNUM}_${PNAME}"
-    FILE="${PNUM}.${PLANG}"
-
-    mkdir $FOLDER
-    (cd $FOLDER && _paste)
-    date -I > "$FOLDER/notes.txt"
 }
 
 echo "
