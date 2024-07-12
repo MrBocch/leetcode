@@ -31,6 +31,8 @@ _paste(){
     if (uname="Darwin") then
         pbpaste > $FILE
     else
+        # assuming its linux
+        # what about wayland?
         xclip -selection clipboard -o > $FILE
     fi
 }
