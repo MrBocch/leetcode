@@ -1,8 +1,36 @@
 #!/usr/bin/env bash
 
-_copy(){ echo "test" }
+PNUM=
+PNAME=
+PLANG=
 
-echo "hello world"
+_get_name(){
+    echo "insert number"
+    read PNUM
+    echo "insert NameOfProblem"
+    read PNAME
+    echo "insert extension, ex: .py"
+    echo "make sure to have code in clipboard"
+    read PLANG
+}
 
-# syntax error: unexpected end of file
-# why do i get this error?
+_paste(){
+    if (uname="Darwin") then
+        pbpaste > $FILE
+    else
+        # xclip -selection clipboard -o > to file
+        echo "linux"
+    fi
+}
+
+_main(){
+    _get_name
+    FOLDER="${PNUM}_${PNAME}"
+    FILE="${PNUM}.${PLANG}"
+
+    mkdir $FOLDER
+    (cd $FOLDER && _paste)
+    (date -I > "$FOLDER/notes.txt")
+}
+
+_main
