@@ -1,5 +1,0 @@
-2025-01-15
-
-only solved this because of leetle, but the leetle version is different,
-it does not ask you to rotate the matrix in place, but which i imagine 
-makes things easier, but decided to not do that.
