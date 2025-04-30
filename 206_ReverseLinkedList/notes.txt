@@ -1,0 +1,21 @@
+2025-04-30
+
+Some very short time ago I tried to reverse a linked list in python for
+what ever reason and I couldnt. That was so emberassing I decided that
+I must come back to this to redeem my self.
+
+I figured I must be able to reverse a linked list considering how much expierience one has and that once you learn it you can never forget.
+
+This took me alot long that it should have. I dont code in C anymore but still.
+
+So when i was doing this
+```c
+struct ListNode* temp = curr;
+curr->next = prev;
+prev = curr;
+curr = temp->next;
+```
+
+This does will not work.
+
+`temp` was also pointing to `curr`, it is not a copy.
