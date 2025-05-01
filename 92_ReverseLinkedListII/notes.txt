@@ -1,0 +1,24 @@
+2025-05-01
+
+I imagine one is ment to manipulate the Node->next
+to point to another node, but it seems so much more complicated
+than just overriding the things.
+
+time complexity: O(2n) -> O(n)
+space complexity: O(n)
+
+Now that im thinking about it, its the same as reversing
+the linked list from before, but at the end we take one more step.
+
+This step is, the first node points to the node that goes after
+the last node, and the previous node from the left points to the node
+of the last.
+
+ez enough right?
+
+I cut these problem into, pieces
+find the sublist, reverse it.
+and then cut it back into where it was.
+
+Funny edge cases that I did not consider. Managing memory and pointers its so easy
+to shoot yourself.
