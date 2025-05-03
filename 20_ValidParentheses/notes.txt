@@ -1,0 +1,33 @@
+...
+
+2025-05-03
+
+Because I solved the previous 2 linked list problems
+in C, decided to comeback to an old problem that I solved
+using a stack but implement it using a liked list.
+
+Also thinking of redoing this but instead of using a linked list,
+use a dynamic array instead.
+
+Not leaking memory is so hard.
+
+I know C is much faster but comparing performace with
+my other python/ruby solution is so funny
+
+┌──────────┬────────┬──────────┐
+│                      │ speed       │ memory         │
+├──────────┼────────┼──────────┤
+│ C (linkedList) │ 3ms         │ 8.5mb           │
+│ C (dyn array) │ 0ms         │ 8.05mb          │
+│ python           │ 39ms      │ 16.48mb       │
+│ ruby              │ 63ms       │ 211.04mb     │
+└──────────┴────────┴──────────┘
+
+I am super happy with my dynamic array implementation and solution, and it so much more
+faster. Reallocating buffers is alot faster than manipulating pointers?
+
+That was so much fun.
+
+I also dont think we should be so afraid of using `goto` statements
+
+https://jorenar.com/blog/gotophobia-harmful
