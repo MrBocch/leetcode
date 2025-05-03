@@ -1,0 +1,11 @@
+2025-05-02
+
+I have the second slowest solution of the bunch. The majority is at 6ms, mine is 22ms.
+The slowest is 1,187ms, why is this solution that much slower than mine?.
+
+Honestly thought my solution would be alot slower.
+Very clever algorithm is needed to be fast.
+
+What is the time complexity?
+
+Worst case is O(n^2)?
