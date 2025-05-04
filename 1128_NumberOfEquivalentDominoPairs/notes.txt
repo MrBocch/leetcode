@@ -1,0 +1,11 @@
+2025-05-04
+
+I just now understand the
+obj.method(&:method) syntax now. LOOL
+
+I wonder if the ruby interpreter does this optimization
+[1,2,3,4 ... n].sum()
+to
+(n * (n+1)) / 2
+instead of
+1 + 2 + 3 + .... n
