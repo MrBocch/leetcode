@@ -9,3 +9,9 @@ to
 (n * (n+1)) / 2
 instead of
 1 + 2 + 3 + .... n
+
+only way to know is to compare speed difference
+
+So it appears that it has some effect but its supper minimal
+code......(1...v).sum : 31ms
+code...gauss_sum(v-1) : 28ms 
