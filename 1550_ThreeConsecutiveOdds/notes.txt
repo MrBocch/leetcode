@@ -1,0 +1,20 @@
+2025-05-10
+
+I imagine can ultra optimize this by, 
+lets say 
+n_i is not odd, 
+n_i+1 is not odd
+n_i+2 is odd 
+
+Instead of incrementing i+1, you increment by 2, knowing 
+that the i+1 will be impossible.
+
+I cant imagine it would that much faster. 
+with a runtime less than 0ms, how can I see the performance gains?
+
+The declarative solution feels like magic. 
+Wish it had occured to me that I could call (.any?)
+on the arr.each_cons()#Enumerable, first without needing
+to look at someone elses code. Live and learn.
+
+
