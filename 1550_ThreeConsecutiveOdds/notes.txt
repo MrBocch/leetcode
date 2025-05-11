@@ -17,4 +17,19 @@ Wish it had occured to me that I could call (.any?)
 on the arr.each_cons()#Enumerable, first without needing
 to look at someone elses code. Live and learn.
 
+I also want to note that the cleaner version seems to be
+2-3 ms faster than the code I originally wrote. 
+
+Is it because im calling 1 less method?
+Does the .any? method return early when it finds a case to be true?
+
+Orignial
+#each_cons -> .filter -> .all? -> .odd? -> size
+
+Cleaner:
+#each_cons -> .any?-> .all? -> .odd?
+
+I guess in my original method it must
+first create an array I can call .size() on aswell 
+
 
