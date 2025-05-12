@@ -18,6 +18,7 @@ Very very big. if dig.size =
 Forget about it.
 This will always always be very slow. 
 
-Generate the possible numbers some other way.
-could i use "01" masking?
+Quicker data structures still wont 
+save you, it did a little bit better but not much.
 
+Generate the numbers some other way.
