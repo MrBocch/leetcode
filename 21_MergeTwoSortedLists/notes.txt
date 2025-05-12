@@ -1,0 +1,40 @@
+2025-05-11
+
+This code is not only just very ugly (ughh)
+its also very unperformant.
+
+O(n^2), This is because, I am not 
+holding a pointer to the last node, I am calculating
+it over and over and over again.
+
+I infact could not solve it (brain fog...*excuses), do 
+decided to go out on a walk. On my walk I realized that 
+a it would be so simple in LISP because one would use recursion.
+Then I thought, you can use recursion in C as well.
+
+Refactor this, ALSO passing the pointer to last, how much 
+faster would it be?
+
+Solution: 341ms, 10.68mb
+
+The most common solution is at 0ms......
+
+WAIT!!!!
+
+(no print statements)
+Solution: 0ms, 10.78mb
+
+When I originally submit the code, I did not erase my (debugging print statements)
+WOW, That really slowed it down like crazy.
+
+If actually reads the problem, one would see that
+
+> The number of nodes in both lists is in the range [0, 50]
+
+Meaning the merged list, in the worst case, would be 100 long.
+This wont have much of a cost calculating the last node over and over again?
+
+I imagine it must have a significant cost when the list is much bigger.
+
+Still refactor with a pointer to the end of list.
+Looking at other people's code. My code is so UGLY and BADDDDDDDDDDDDD.

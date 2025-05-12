@@ -15,5 +15,7 @@ bool threeConsecutiveOdds(int* arr, int arrSize) {
 }
 
 bool is_odd(int n){
+	// this occured to me after the fact looking at the code
+	// return n % 2 != 0; this is much nicer to look at, whatever
     return !((n % 2) == 0);
 }
