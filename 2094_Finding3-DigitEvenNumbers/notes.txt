@@ -1,0 +1,23 @@
+2025-05-12
+
+My permutation ruby solution is most likely correct
+but its very slow.
+
+constraints
+3 <= digits.length <= 100
+
+So imagine the worst case
+digits.length = 100
+
+how long would digits.permutation(3) get?
+
+Very very big. if dig.size = 
+6 -> 720 permutations
+10 -> 3628800 permutations
+
+Forget about it.
+This will always always be very slow. 
+
+Generate the possible numbers some other way.
+could i use "01" masking?
+
