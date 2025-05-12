@@ -22,3 +22,24 @@ Quicker data structures still wont
 save you, it did a little bit better but not much.
 
 Generate the numbers some other way.
+
+You can either generate the numbers in a different manner or
+you shorten the amount of permutations.
+
+Like for example [2,2,2,2,9]
+2 cant show up more than 3 times in a 3 digit number so
+we can eliminate a 2, given us k less permutations
+
+In the worst case
+(1 to 9) shows up 3 times -> 3 * 9 = 27
+(0) shows up 3 times -> 0 cant be in first digit so its, 0 can only apear 2 times at most
+
+27 + 2 = 29
+Calculating these many permutation(29) over 100, this is a much better optimiazition.
+
+That is so kool. I never really thought of this way before, making n smaller to 
+a more managable number.
+
+Its still quite slow, (387..394)ms, it still so cool.
+
+How did other people solved it? They have a 15ms solution over my 400ms-ish LOOOL
