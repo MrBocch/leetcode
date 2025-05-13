@@ -50,4 +50,7 @@ I was really stuck on that returnSize* thing, Would have taken me a long long
 time before it would have occured to me.
 And I also completly forgot about the arr->length == 0 case, 
 
-Lots of fun
+Lots of fun using my own implementation of dynamic arrays from LC:20 (valid parenthesis), it was pretty much plug and play, only needing to change the val type to int.
+Maybe I should have written it as a macro
+
+
