@@ -43,3 +43,11 @@ a more managable number.
 Its still quite slow, (387..394)ms, it still so cool.
 
 How did other people solved it? They have a 15ms solution over my 400ms-ish LOOOL
+
+C solution is 0ms with 12mb
+
+I was really stuck on that returnSize* thing, Would have taken me a long long 
+time before it would have occured to me.
+And I also completly forgot about the arr->length == 0 case, 
+
+Lots of fun
