@@ -51,8 +51,9 @@ def oldNewLang():
     folder = ""
     fnum = ""
 
+    # O(n) is faster than sorting list then using binary search
     for d in dirlist:
-        if os.path.isdir(d) and not d ==".git":
+        if os.path.isdir(d) and not d[0] == ".":
             fsplit = d.split("_")
             fnum = fsplit[0]
             fname = fsplit[1]
