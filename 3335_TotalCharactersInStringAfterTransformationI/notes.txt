@@ -1,0 +1,30 @@
+2025-05-13
+
+So off the jump did not expect the bruteforce method to work because the input 
+can get quite big
+
+> 1 <= s.length <= 10^5
+> 1 <= t        <= 10^5
+
+Imagine the worst case scenario. They obviously intended 
+for a clever algorithm to be deployed here. What could it be?
+
+Have a hashmap, with all the letters 
+and count its freq at the start, apply a function
+that applies the same rules, to calculate the new frequency.
+
+at the end sum it all up?
+
+Ok, tried that and it still does not work. 
+
+The hint
+"Maintain the frequency of each character" 
+was not much help
+
+Ok what if instead you calculated what 
+'a' would turn into after 10 turns, but not from iteration 1 -> 2 -> 3 ....
+but straight away?
+
+we know that 
+('a' 3) is (d : 1)
+should try this
