@@ -19,7 +19,7 @@ Ok, tried that and it still does not work.
 
 The hint
 "Maintain the frequency of each character" 
-was not much help
+troll face
 
 Ok what if instead you calculated what 
 'a' would turn into after 10 turns, but not from iteration 1 -> 2 -> 3 ....
