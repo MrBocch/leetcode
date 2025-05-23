@@ -2,8 +2,15 @@
 
 Saw this in a CODE report video and thought
 to solve it in
-- C (brute force),
-- C (one pass)
-- then a pure fp language
+- C (brute force): O(n^2) 5ms
+- C (one pass)   : O(n)   0ms
+- elixir         : O(n)   0ms (but it uses alot more memory) 
 
 then I'll go watch the video and compare
+
+So I actually have no experience with elixir, but its the closest
+to ruby so I thought it wouldn't be to hard.
+If I had more experience with elixir I would probably use a reduce.
+
+Discovering elixir has pattern matching like haskell makes me want to
+checkout elixir.
