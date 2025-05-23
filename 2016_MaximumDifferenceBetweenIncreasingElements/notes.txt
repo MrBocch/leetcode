@@ -1,0 +1,9 @@
+2025-05-23
+
+Saw this in a CODE report video and thought
+to solve it in
+- C (brute force),
+- C (one pass)
+- then a pure fp language
+
+then I'll go watch the video and compare
