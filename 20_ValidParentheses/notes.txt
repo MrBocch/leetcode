@@ -31,3 +31,5 @@ That was so much fun.
 I also dont think we should be so afraid of using `goto` statements
 
 https://jorenar.com/blog/gotophobia-harmful
+
+I might learn flutter so I decided to learn some dart by revisiting easy leetcode problems.
