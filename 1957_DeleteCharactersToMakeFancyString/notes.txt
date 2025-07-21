@@ -1,0 +1,24 @@
+2025-07-21
+
+The iterative python solution is really slow, I believe its
+because we are += to the string meaning it must allocate a
+new string right?
+
+How much faster would it be to use a array then join them at the end?
+
+It made very little difference, so why is it so slow?
+What are others doing? They are most likely deleting in place? -> No
+
+Maybe its me calling len() on the string over and over
+I quit calling len() and it was significantly faster.
+Maybe it would also be faster if you did not have to index into the list
+
+Yeah, im lookin at a solution twice as fast as mine, they are also
+avoiding new string allocations, but they are not even allocating
+strings for knowing the previous 2 chars, but they use a count instead of
+indexing for last to strings
+
+To go from 535ms to 195ms using the same memory is a big deal if you
+were doing this over and over.
+You go faster by doing less.
+
