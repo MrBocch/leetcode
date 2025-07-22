@@ -1,0 +1,8 @@
+ 2025-07-22
+
+wish you could define the default value in a dictionary
+*without* having to import anything like in ruby.
+
+what is the time complexity?
+
+O(n *(time to sort string?))
