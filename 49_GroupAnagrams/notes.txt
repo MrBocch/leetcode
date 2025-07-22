@@ -6,3 +6,12 @@ wish you could define the default value in a dictionary
 what is the time complexity?
 
 O(n *(time to sort string?))
+
+So i looked into it, a quicker method is to
+instead of sorting the strings for the keys,
+you can instead generate keys by using the
+frequency of each letter into a 26 long array.
+I tried it but it seems to be slower, my guess
+is the allocating of list then turning it into a key
+On big O notation it should be quicker but it
+does not appear so (atleast in python)
