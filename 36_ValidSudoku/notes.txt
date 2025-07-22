@@ -1,0 +1,14 @@
+2025-07-22
+
+I always wondered when would using partial application
+on a function ever be usefull.
+
+The code is really ugly. It would be more clever to turn
+every row/col into set.
+
+What if instead you turn every cell (row, col, item) into
+like a hashmap, then when you want to check if a sudoku is
+valid you do a query on
+items on row[0] -> 1 2 3 5 6 1
+items on col[0] -> 1 7 8 2 3 4
+what about the box's?  

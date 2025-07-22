@@ -1,0 +1,12 @@
+2025-07-21
+
+The naive solution was exceeding the time limit until i sorted the
+initial array (8020ms).
+Then decided to sort everytime you add a value lowers it down to (1559ms),
+my guess the intepreter has an easier sorting?
+
+ but its still too slow.
+
+In binary search, we know the datastructure is sorted so its very quick to find
+the data, maybe there is a similar data structure for adding in a data but we
+also want to get the 'kth' biggest item.
