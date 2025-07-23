@@ -1,0 +1,18 @@
+2025-07-22
+
+The Counter() and .most_common() thing was really
+cool but I wouldn't have known about it unless i saw the documentation
+for Counter.
+
+The bucket sort solution is really cool.
+I have done the opposite where you have and array and
+you index into with
+freq[ord(char)] += 1
+but the bucket sort thing is like the same but backwards.
+
+but its slower. I figured maybe the Counter() thing is just implemented
+in C but I dont think it is.
+- https://github.com/python/cpython/blob/main/Lib/collections/__init__.py#L551
+its a python class. and they are using heapq?
+
+maybe my implementation is just slow 
