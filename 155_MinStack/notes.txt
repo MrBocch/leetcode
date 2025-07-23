@@ -1,0 +1,11 @@
+2025-07-23
+
+The min stack is so fucking cool. I have heard that
+programs use a stack as a method for 'undoing' an action
+or a playlist functionality.
+
+This feels sorta similar, but instead its keeping track of
+what the min value was in time. 
+
+Im not sure if saving them seperatly in two different stacks
+is that much slower over saving them as a tupple in the same stack.
