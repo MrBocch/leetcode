@@ -1,0 +1,23 @@
+2025-07-24
+
+This one really trips me up.
+You are still looping over the nums twice but
+the look up is O(1) so its not O(n^2).
+
+Also for some reason you have to iterate over the
+hash instead of the nums, i guess its faster if you dont
+have to go over any duplicates???
+Dont understand why it would be an issue?
+
+I remember reading in The Algorithm Design Manual 
+in sorting chapter, that some problems become trivial
+once data is sorted. This is one.
+
+I just dont understand why looping over
+for n in nums:
+# exceeds the time limit 
+# over
+for n in lookup:
+
+it could litterally the be exact same code why?
+
