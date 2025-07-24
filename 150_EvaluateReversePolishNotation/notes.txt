@@ -50,3 +50,9 @@ in haskell you could probably do something very neatly with a function
 data is imutable in haskell so idk about the stack push thing 
 
 let stack = stack.push   (+,-,*,/) v1 v2
+
+
+I did not realise i already solved this, i realised the
+issue was division arithmetic a lot quicker than before.
+The code I was writting was so bad lol, still is.
+
