@@ -1,0 +1,6 @@
+2025-07-24
+
+I overcomplicated it by trying some tricks but
+not thinking through whether it was even correct.
+
+it reminds me of minstack
