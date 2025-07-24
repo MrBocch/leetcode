@@ -5,8 +5,11 @@ You are still looping over the nums twice but
 the look up is O(1) so its not O(n^2).
 
 Also for some reason you have to iterate over the
-hash instead of the nums, i guess its faster if you dont
-have to go over any duplicates???
+hash instead of the nums,
+
+i guess its faster if you dont
+have to go over any duplicates???, its not that much work is it?
+
 Dont understand why it would be an issue?
 
 I remember reading in The Algorithm Design Manual 
