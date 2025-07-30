@@ -1,0 +1,11 @@
+2025-07-26
+
+There's no trick if you decide to cheat and use
+division.
+
+When I learned the correct solution I realized that
+one should approach leetcode problems like math problems,
+you have to formulate a solution and proof why its correct.
+
+My solution is very unoptimized, iterating over nums 3 times
+is overkill
