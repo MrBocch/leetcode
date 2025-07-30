@@ -1,3 +1,17 @@
 2025-07-30
 
 simple substitution cipher
+
+I just reliazed after the fact
+
+if ord('z')+1 == curr:
+    break
+
+The idea is that if the key is longer than the alphabet
+and the hashmap already has 'z' you can break out early.
+
+I was looking at it ord('z')+1 evaluates to a number type
+but curr is a String type. It will never evaluate to True.
+Big fail interpreted languages (skill issue).
+
+It would be more aesthetic if I just did not include that ;-;
