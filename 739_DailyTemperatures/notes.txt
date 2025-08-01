@@ -1,0 +1,18 @@
+2025-08-01
+
+I just could not figure out how how you were ment to
+do the brute force O(n^2).
+
+Figured its probably best to traverse array backwards on my own
+but had to look peek at hint (monotonic stack) and go learn
+what that is before writing this sloop.
+
+How is this solution O(n)? You traverse array but also popping from
+the stack which could also be the length of n ? this not an issue?
+
+Know that I think about it, you could also probably use a
+monotonic array for that other problem the Kth in a array?
+
+Also this is the absolute slowest solution I did something wrong.
+
+
