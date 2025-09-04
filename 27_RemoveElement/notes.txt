@@ -1,0 +1,15 @@
+2025-09-04
+
+I found this very elegant solution that had no edge cases
+band aid fixes.
+
+Instead of n[first] == val { swap nums[first] nums[last] }
+
+instead you traverse the list, you repeat the number that is not
+the val, idk how to explain
+
+[1, 2, 4, 3, 5] val = 4
+
+-> [1, 2, 3, 5, 5]
+
+Also, I think its time for me to try on harder problems instead of staying in my comfort zone
