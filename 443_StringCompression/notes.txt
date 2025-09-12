@@ -12,6 +12,9 @@ Take A turn into B then into C then we have Answer.
 The ruby solution would look so much more cleaner if
 ruby had function pattern matching like elixir or haskell.
 Should rewrite it just to see what it looks like.
+Only realized this after the fact, but had i just written
+the group function as a Array#reduce(), it would have been so much
+more cleaner. oh well:(
 
 Writing the go version, at one point the code got so bad
 i just decided to rewrite half of it and i solved it in 3 minutes.
