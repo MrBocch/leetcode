@@ -1,0 +1,14 @@
+2025-09-12
+
+Thought of this problem when I was doing the bad apple thing in
+armlite, wont get into it here.
+
+I know you are ment to use two pointers
+but i figured the functional solution would be so much cleaner.
+Maybe its not "just cleaner" but i think in a more functional way.
+
+Take A turn into B then into C then we have Answer.
+
+The ruby solution would look so much more cleaner if
+ruby had function pattern matching like elixir or haskell.
+Should rewrite it just to see what it looks like.
