@@ -3,3 +3,4 @@
 Set algebra, i wonder if it would be any faster if I used Set[]?
 
 Will redo it in golang.
+Dont really feel like doing it without strings.Split().
