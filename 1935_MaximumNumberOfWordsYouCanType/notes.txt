@@ -1,0 +1,5 @@
+2025-09-15
+
+Set algebra, i wonder if it would be any faster if I used Set[]?
+
+Will redo it in golang.
