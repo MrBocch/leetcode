@@ -4,4 +4,11 @@ I remember really struggling to implement binary search before
 but I did not really struggle at all this time. Its a lot
 easier if you first think it out and visualize it on paper.
 
+I just remembered this,
+Java's implementation for BinarySearch had a bug that went unnoticed
+for 9 years
 
+https://research.google/blog/extra-extra-read-all-about-it-nearly-all-binary-searches-and-mergesorts-are-broken/
+
+I of course also commited the same mistake LOL. Writting bug-free code is so
+hard.
