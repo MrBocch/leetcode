@@ -4,3 +4,7 @@ short circuit evaluation so kool, String#index will return nil if pattern
 is not found.
 
 should try without piggy backing off a standard library like ruby's
+
+I did not know golang had this like python'esque array slicing
+haystack[i:i+len(needle)] == needle
+doing that is a lot simpler, its probably just as fast as what i wrote
