@@ -1,0 +1,9 @@
+2025-09-22
+
+Just realized that sorting to get the max value is dumb and slower
+(but, less lines of code).
+
+Also the #Array.filter_map{ |T| (T expr) if (cond) }
+is very similar to list comprehension in python.
+
+Interesting that you can calculate, the maxf and count at the same time.
