@@ -3,3 +3,11 @@
 Isn't ruby so beautiful.
 
 In gopherlang, I could probably do the same type of solution.
+
+Thought what would you do to avoid the while loops and appending
+ to the array which takes time if it continually reallocates over and over.
+ With if expressions, code does not ugly.
+ You could have also used the ternary operator. I always forget about ternary operator,
+ rewrote it with ternary, it looks cleaner IMHO.
+
+
