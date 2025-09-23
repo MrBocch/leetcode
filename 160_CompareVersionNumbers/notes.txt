@@ -1,0 +1,5 @@
+2025-09-23
+
+Isn't ruby so beautiful.
+
+In gopherlang, I could probably do the same type of solution.
