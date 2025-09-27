@@ -1,0 +1,11 @@
+2025-09-26
+
+very peculiar, thought it would have been as easy as
+just copy and pasting the binary search code from another
+problem I solved.
+
+Had to look at the guesses, and once I
+heard it seemed so simple "How did I not see this."
+
+I think part of it was I dont fully read the problem and all
+the clues that are given to me. Fully read and understand all the details.
