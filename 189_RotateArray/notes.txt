@@ -1,0 +1,10 @@
+2025-10-01
+
+First found Time: O(n) solution but its not O(1) in space.
+Also learned that you can map on Enumerators instead of
+converting it into a array. Its a little bit faster but not by much.
+
+The brute force solution is both, in place and O(1) space but its
+O(n^2) time. It wont even pass the last 2 test cases.
+
+How can we get the benefits of both solutions? 
