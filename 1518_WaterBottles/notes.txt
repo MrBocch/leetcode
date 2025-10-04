@@ -18,3 +18,6 @@ on line where
 being able to reference numExchange, that is thanks to closures. neat!
 
 does go do TCO? It appears that scala and elixir support do.
+
+I thought my solution was clever, you could have solved it in
+O(1) space and time, with simple math........
