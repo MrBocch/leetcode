@@ -1,0 +1,20 @@
+2025-10-03
+
+I knew this problem was perfect for solving with recursion.
+Reassigning emptyBottles, numBottles, drank is much more readable
+to do
+emptyBottles += numBottles
+..
+..
+return drinking(...)
+
+but i just thought it would look cooler to do it in inline.
+
+on line where
+```
+} else if emptyBottles >= numExchange {...
+```
+
+being able to reference numExchange, that is thanks to closures. neat!
+
+does go do TCO? It appears that scala and elixir support do.
