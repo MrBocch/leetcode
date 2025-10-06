@@ -1,0 +1,8 @@
+2025-10-05
+
+very minimal changes from the previous problem.
+Im sure there is a clever math solution like previous.
+
+Also thought to do the iterative solution. As expected it uses
+less memory because it does not have to allocate stack frames. Still much
+rather write the recursive solution in this case.
