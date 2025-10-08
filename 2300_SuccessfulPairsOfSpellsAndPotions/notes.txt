@@ -1,0 +1,8 @@
+2025-10-08
+
+cool that i could reuse code from another leetcode problem
+(35_SearchInsertPosition),
+not quite copy and paste but close.
+
+The first clue kinda just gave it all away. My solution is quite slow.
+
