@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# dont use this
+# not going to update it after the /src folder 
+# dont like bash
+
 PNUM=
 PNAME=
 PLANG=
