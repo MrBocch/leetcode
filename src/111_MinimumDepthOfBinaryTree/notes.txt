@@ -1,0 +1,17 @@
+2025-10-10
+
+what is the time complexity of recursive solution?
+It feels like it should be slow but
+"The number of nodes in three is in the range [0, 10^5]"
+I guess its O(n), but in space, I imagine it just blows up.
+
+What if you dont have to traverse the entire tree? 
+just return early.
+
+thats the iterative solution but, im a silly guy. If im doing it iteratively
+I should not be calling a depth function, I should fully write it to be itterative.
+If you were to do it iteratively, would I have to slices, and switch over
+back and forth?, also have to zero out the slices. 
+
+also, they are called
+Depth First Search, Breath First Search. 
