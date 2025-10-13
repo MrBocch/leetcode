@@ -1,0 +1,9 @@
+2025-10-13
+
+used this feature in ruby which lets
+you modify any class. How do I feel about this?
+
+I would not like it if a library made that change
+and had to learn it the hard way. 
+
+guess it just depends on how disciplined a programmer is. 
