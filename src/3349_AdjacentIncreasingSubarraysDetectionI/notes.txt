@@ -1,0 +1,10 @@
+2025-10-14
+
+When ever you fully draw out the problem, it becomes
+so much clearer, and the code you write ends up 10x cleaner as well.
+
+Epic 'one liner' solution in ruby.
+The performance diff is so funny. The functional solution is always
+cleaner for these types of problems, dont have to mess with indexes
+and off by one errors.
+
