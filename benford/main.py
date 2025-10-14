@@ -20,7 +20,7 @@ def freq(xs):
 # Sample data
 xs = [1,2,3,4,5,6,7,8,9]
 ns = get_digits()
-y  = [ ys/100 for ys in freq(ns) ]
+y  = [ ys/len(get_digits()) for ys in freq(ns) ]
 
 plt.grid(True,
          linestyle='--',
