@@ -40,10 +40,11 @@ benford_counts = [p * total for p in benford]
 plt.plot(digits, benford, color='red', marker='x', linestyle='-', linewidth=2, label="Benford's Law")
 
 # Add labels and title
-plt.xlabel('Initial Digit for Leetcode Problem')
+plt.xlabel(f"Initial Digit for Leetcode Problem")
 plt.xticks([1,2,3,4,5,6,7,8,9])
 plt.ylabel('Percentage %')
-plt.title('Leetcode Problems, Benfords Law')
+plt.suptitle('Leetcode Problems, Benfords Law')
+plt.title(f'Total: {len(get_digits())}')
 plt.legend()
 
 
