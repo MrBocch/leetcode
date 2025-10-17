@@ -1,3 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'clipboard'
+
 def main
   banner = <<-EOF
   ====================
@@ -31,12 +35,16 @@ def new_solution
   n = input_n.to_s
   path = "#{__dir__}/src"
   problems = Dir.children(path).map { |pn| pn.split('_') }
+
   case problems.map { |pn| pn[0] }.include? n
   when true
     name = problems.filter { |pn| pn[0].to_s == n }.first[1]
-    puts "already solved: #{n}_#{name}"
+    submit_problem(n, name)
   when false
-    create_new_problem n
+    name = get_problem_name n
+    create_folder(n, name)
+    create_notes(n, name)
+    submit_problem(n, name)
   end
 end
 
@@ -51,35 +59,65 @@ def input_n
   end
 end
 
-# for solved a new problem, inits folder
-def create_new_problem(num)
-  print 'Problem name in (PascalCase): '
-  name = readline.chomp
-  puts "Creating #{num}_#{name}"
+def get_folder_path(num, name)
+  "#{__dir__}/src/#{num}_#{name}"
 end
 
-def init_solution(folder_name)
-  create_notes folder_name
-  # now get solution from clipboard
+def get_problem_name(num)
+  puts 'Enter name in (PascalCase)'
+  print "#{num}_"
+  readline.chomp.strip
 end
 
-def create_notes(folder_name)
-  path  = "#{__dir__}/src"
-  year  = Time.now.year
+def create_folder(num, name)
+  path = "#{__dir__}/src"
+  folder = "#{num}_#{name}"
+  puts "Creating folder #{folder}"
+  Dir.mkdir("#{path}/#{folder}")
+end
+
+def date
+  year = Time.now.year
   month = Time.now.month < 10 ? "#{0}#{Time.now.month}" : Time.now.month
-  day   = Time.now.day < 10 ? "#{0}#{Time.now.month}" : Time.now.month
+  day = Time.now.month < 10 ? "#{0}#{Time.now.day}" : Time.now.day
+  "#{year}-#{month}-#{day}"
+end
 
-  puts "Creating #{path}/#{folder_name}/notes.txt"
-  Dir.mkdir "#{path}/#{folder_name}"
-  File.open("#{path}/#{folder_name}/notes.txt", 'w') do |f|
-    f.write("#{year}-#{month}-#{day}\n\n")
+def create_notes(num, name)
+  folder_path = get_folder_path(num, name)
+  File.open("#{folder_path}/notes.txt", 'w') do |f|
+    f.write("#{date}\n\n")
   end
 end
 
-# for solved a problem, but with a different
-# language or different algorithm
-def submit_solved_problem(num, name)
-  puts 's'
+def submit_problem(num, name)
+  folder_path = get_folder_path(num, name)
+  subfiles = Dir.children(folder_path).filter { |name| name != 'notes.txt' }
+  unless subfiles.empty?
+    puts "Files in #{folder_path}\n"
+    subfiles.each { |fname| puts "-> #{fname}" }
+  end
+
+  puts 'Do you want a description (if no leave empty)'
+  print "#{num}_"
+  description = readline.chomp.strip
+
+  puts 'Enter file extention of language'
+  if description.empty? then print "#{num}." else print "#{num}_#{description}." end
+  ext = readline.chomp.strip
+
+  full_file_name = if description.empty? then "#{num}.#{ext}" else "#{num}_#{description}.#{ext}" end
+  puts "\nGoing to create #{full_file_name}"
+
+  write_submission(folder_path, full_file_name)
+end
+
+def write_submission(folder_path, file_name)
+  # no need for preprocising the content?
+  contents = Clipboard.paste
+  File.open("#{folder_path}/#{file_name}", 'w') do |f|
+    f.write(contents)
+  end
 end
 
 main
