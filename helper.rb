@@ -77,9 +77,10 @@ def create_folder(num, name)
 end
 
 def date
-  year = Time.now.year
-  month = Time.now.month < 10 ? "#{0}#{Time.now.month}" : Time.now.month
-  day = Time.now.month < 10 ? "#{0}#{Time.now.day}" : Time.now.day
+  t = Time.now
+  year   = t.year
+  month = t.month < 10 ? "0#{t.month}" : t.month
+  day   = t.day   < 10 ? "0#{t.day}" : t.day
   "#{year}-#{month}-#{day}"
 end
 
