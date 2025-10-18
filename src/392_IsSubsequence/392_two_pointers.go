@@ -8,3 +8,4 @@ func isSubsequence(s string, t string) bool {
     }
 
     return i == len(s)
+}
