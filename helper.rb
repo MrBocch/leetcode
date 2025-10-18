@@ -78,7 +78,7 @@ end
 
 def date
   t = Time.now
-  year   = t.year
+  year  = t.year
   month = t.month < 10 ? "0#{t.month}" : t.month
   day   = t.day   < 10 ? "0#{t.day}" : t.day
   "#{year}-#{month}-#{day}"
