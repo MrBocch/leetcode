@@ -1,0 +1,9 @@
+2025-10-17
+
+When I saw "subsequence" figured could use
+a String.index() type method but not the case
+because we are not actually looking for a substring.
+
+Ment to look for the same tally of characters, but
+they must also be in order. 
+
