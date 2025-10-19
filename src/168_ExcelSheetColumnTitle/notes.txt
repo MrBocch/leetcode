@@ -1,0 +1,26 @@
+(whats orignal date?
+made this before script)
+
+2025-10-19
+
+This is some 'easy'. Im just bad at math.
+Took a glance at it and thought, oh, this is just
+take a number and convert it to base 26, as if it
+you were converting it into base 16.
+
+Not the case. I did not realize this until 2 hours
+in, "THERES NO ZERO". How did I not realize this right away?
+
+This is the problem when you race to keyboard instead of
+fully observing the problem, and formulating the solution.
+
+Even knowing this could not have solved it unless chatgpt mentioned
+it in passing when I asked it
+"Number system without zero"
+then
+"Base 26 without zero"
+
+https://en.wikipedia.org/wiki/Bijective_numeration
+https://dfns.dyalog.com/n_adic.htm
+
+major skill issue!
