@@ -1,0 +1,21 @@
+2025-10-20
+
+Saw this code_report video,
+https://www.youtube.com/watch?v=zrOIQEN3Wkk
+thought to, solve it first, then compare to
+how he solved it.
+
+Also, fun idea to use a array, to have multiple accumulators
+
+I still think very imperatively (reduce is just state), or maybe
+he is very APL'brained. I just don't think
+very 'array programming oriented'.
+
+he really transforms the data
+string |> filters for '()'
+       |> maps    '('-> 1;
+				  ')'->-1;
+       |> prefix sum
+	   |> max 
+
+Just a different way of thinking.
