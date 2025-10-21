@@ -11,3 +11,10 @@ of creating a hashmap
 
 I had not idea .tally() was thing, "This is so convinient i might would of liked
 to know sooner"
+
+(2025-10-20)
+looking at this for whatever reason.
+You could tell i was just learning ruby
+
+would replace the tally with
+	nums.tally.any?{|k,v| v>1} 
