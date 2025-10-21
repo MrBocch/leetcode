@@ -1,0 +1,12 @@
+2022-11-01
+
+---
+
+2025-20-17
+
+o wow, wrote this 3 years ago.
+
+I thought i would try writing scala code
+imperatively and decleratively but it
+it feels like a pain not doing it functionaly.
+well i still have a lot to learn.
