@@ -1,0 +1,41 @@
+2025-10-22
+
+is there a performance diff between
+.include? and key?
+
+(scala)
+Reminiscent to first learning ruby.
+I would awe to how others would write
+in essence the same solution but with
+they knew all the methods and all the
+objects. for example the .tally.
+
+This is the same
+
+like
+	stones.toArray.groupMapReduce(identity)(_ => 1)(_+_)
+
+i wish there was a scala reference, similar to RubyDoc.
+
+its super convenient having a scala repl only for
+:t stones.toArray.groupMapReduce()
+(Char => Any) => (Char => Any) => ((Any, Any) => Any) => Map[Any, Any]
+
+also, i figured it was best to turn the stones into a tally,
+
+but actually better (less code) to; turn the jewels
+to a Set (we know they are only uniques), then
+just fold(0) the stones, +1 if its included in jewels.
+
+    val jewelsSet = jewels.toSet
+    stones.count(jewelsSet.contains)
+
+much cleaner. 
+
+need to find a complete collections API reference.
+
+(side note)
+I always thought the id function would be useless. but
+i guess thats not true
+	id :: a -> a 
+need to get to reading Category Theory for Programmers. 
