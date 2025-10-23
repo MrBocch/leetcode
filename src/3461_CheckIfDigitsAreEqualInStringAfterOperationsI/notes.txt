@@ -1,0 +1,21 @@
+2025-10-23
+
+Its coold how can you mix the two different paradigms.
+
+Also, im pretty sure its possible to do this
+without having to covert the Iter into an array each time
+atleast untill you try to index
+digits(0) == digits(1), convert just before it.
+I'll guess its quicker because it does less work.
+until it needs to
+
+With pattern matching the loop looks so much cleaner.
+
+@scala.annotation.tailrec
+def loop(digits : Array[Int]) : Boolean = digits match {
+    case Array(n1, n2) => n1 == n2
+    case _ => loop(digits.map(_.toInt).sliding(2).map(s => (s(0)+s(1)) % 10).toArray)
+}
+		
+Also, just realized; doing _.toInt; is redundant. a remnant of
+when i was converting it to a string.
