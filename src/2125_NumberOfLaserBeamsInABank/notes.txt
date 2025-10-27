@@ -1,0 +1,8 @@
+2025-10-26
+
+Im sure there is a way of doing some sort
+of scan one can do instead of sliding
+window. 
+
+This should be a easy.
+
