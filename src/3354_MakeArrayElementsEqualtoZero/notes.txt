@@ -1,0 +1,16 @@
+2025-10-28
+
+When I first saw this, i first thought of that
+computerphile Busy Beaver video, (https://www.youtube.com/watch?v=CE8UhcyJS0I)
+so figured that 
+its impossible to calculate answer some other way
+other than just simulating it.
+
+Not true at all.
+
+The solution is
+clever and had you paid attention to
+[1,1,1,0,3] is equivalent to [3,0,3]. you would have seen it.
+
+The scala solution is so ugly LOOL. its there a
+prettier way? 
