@@ -1,0 +1,13 @@
+2025-10-29
+
+in haskell you could
+
+head $ dropWhile (< n) $ map (\x -> (2**x) -1) [1..]
+
+I like how its less verbose than scala, but i dont like you
+have to read it from right to left
+it would be great if it had its own pipe "|>" operator. 
+
+In scala theres more verbosity but, you can read it left to right
+how you would read a sentence. Neat, I wish to learn more about
+lazy evaulations.
