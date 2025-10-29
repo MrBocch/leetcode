@@ -11,3 +11,9 @@ it would be great if it had its own pipe "|>" operator.
 In scala theres more verbosity but, you can read it left to right
 how you would read a sentence. Neat, I wish to learn more about
 lazy evaulations.
+
+bitwise operations are always cool
+n & (n+1) == 0
+does a compiler realize to do these tricks? 
+
+interesting way to do lazy list in elixir.
