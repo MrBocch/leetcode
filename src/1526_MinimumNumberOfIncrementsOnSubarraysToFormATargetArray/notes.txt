@@ -1,0 +1,39 @@
+2025-10-30
+
+I came up with this solution, which I thought
+was pretty clever but it was still O(n^2),
+
+# @param {Integer[]} target
+# @return {Integer}
+def min_number_operations(target)
+  prev_min = target.min
+  totalSteps = prev_min
+  while true do 
+    subs = sub_arrays(target, prev_min)
+    if subs.count == 0 then return totalSteps end 
+    cur_min = subs.map{|m|m.min}.min
+
+    steps = cur_min - prev_min
+    totalSteps += steps * subs.size
+    prev_min = cur_min
+  end 
+end
+
+def sub_arrays(target, min)
+  res = [[]]
+  target.each do |n|
+    if n > min
+      res.last << n
+    else  
+      res << []
+    end 
+  end
+  res.filter{|a| a != []} 
+end
+
+But I did not realize that it still is O(n^2),
+equivalent to polishing a turd.
+
+The solution is so simple damn!!
+I feel like a fool, I was running with blinders/blinkers
+for 2 hours.
