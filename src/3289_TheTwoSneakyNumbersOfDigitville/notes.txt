@@ -1,0 +1,12 @@
+2025-10-31
+
+You could also write a one line solution using
+a hashmap in scala, but its just really
+ugly considering scala has no built in tally.
+
+im learning uiua, and I asked my self, how would i
+solve if had no hashmap only arrays.
+
+(dont know much uiua currently but this is probably how right? a sliding window)
+
+
