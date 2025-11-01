@@ -1,0 +1,16 @@
+2025-11-01
+
+doing this is kinda funny
+
+> while (cache contains ptr.x) 
+
+also, you can only do this because if
+you actually read it.
+- The input is generated such that there is at least one
+  node in the linked list that has a value not present in nums
+
+so cache.contains(ptr.x), will never throw a exception.
+
+cool that you can write functionally
+in scala, but you could also do this
+if you wanted. 
