@@ -1,0 +1,20 @@
+2025-10-31
+
+the reducing on tuples sucks,
+if only the inference was better
+Im imagining doing something like this
+
+.reduce( ((a,b), (c, d)) => (a+c, b+d))
+
+It is much cleaner if instead
+
+"UP" => -n
+"DOWN" => n
+"LEFT" => -1
+"RIGHT" => 1
+
+then sum, yup much cleaner.
+
+(i + n)  + j
+[ row ]   [column]
+
