@@ -1,0 +1,9 @@
+2025-11-01
+
+There really ought to be a good way to refactor the
+maybe it does not make sense to refactor but
+its so unsightly to repeat yourself.
+
+Ahh, doesn't that look so much better?
+the variable names are quite confusing.
+(also cool to use clojures)
