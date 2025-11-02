@@ -1,0 +1,54 @@
+2025-11-02
+
+Wish i could
+var grid [n][m]int
+...
+
+also tried to flatten array,
+i can index to it correctly but don't
+know how to save it into covered. Should come
+back to this, this should be easy.
+
+gave this code to deepseek
+
+> translate this code to use a flatten matrix,
+> rework how its indexed and how covered squares are added to the map
+
+plus the code i wrote, and it one shot it.
+
+The quality of the code is much better,
+```Go
+
+checkDirection := func(guardRow, guardCol int, rowStep, colStep int) {
+    currentRow := guardRow + rowStep
+    currentCol := guardCol + colStep
+    
+    for currentRow >= 0 && currentRow < m && currentCol >= 0 && currentCol < n {
+        pos := currentRow*n + currentCol
+        
+        // Stop if we hit a wall or another guard
+        if grid[pos] == 2 || grid[pos] == 1 {
+            return
+        }
+        
+        // Mark this position as covered
+        covered[pos] = true
+        
+        // Move to next position in this direction
+        currentRow += rowStep
+        currentCol += colStep
+    }
+}
+```
+
+It is faster than my code,
+my - (92ms - 133ms)
+deepseek - (62ms)
+
+figured creating one slice is better than
+creating slices row by row.
+but its still a lot slower than the fastest (30ms)
+
+How did they do it?
+
+Kinda cool i got to reuse code from LC. 999
