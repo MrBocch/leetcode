@@ -1,0 +1,34 @@
+2025-11-03
+
+The ruby solutin is so silly, but you can write it in one line. (so its cool)
+
+# zip colors and their time
+colors.split("").zip(needed_time)
+
+# group them by dublicates [[A A]] [B] [C]]
+.slice_when{|a, b| a[0] != b[0]}
+
+# filter those that have duplicates 
+.filter{|a| a.size > 1}
+
+# we only want their price now 
+.map{|a| a.map{|b| b.last }}
+
+# sort and take only up to the last one 
+.map{|a| a.sort.take(a.size-1)}
+
+# flatten and sum 
+.flatten.sum
+
+Its also comically slow: 413ms
+LOL
+
+Thats the solution, how would you do this in go?
+I'll try it later, but I would probably, make a slice
+of [(start_index - end_index) of duplicates]
+
+and dom a[start_indexstart_index - end_index) of duplicates]
+
+and do sort(a[start_index..end_index])
+then take all but one summing them, do this for each starting and ending indexs.
+Fundamentally the same solution, but imperatively. 
