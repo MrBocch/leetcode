@@ -32,3 +32,13 @@ and dom a[start_indexstart_index - end_index) of duplicates]
 and do sort(a[start_index..end_index])
 then take all but one summing them, do this for each starting and ending indexs.
 Fundamentally the same solution, but imperatively. 
+
+No, there is no need to sort actually,
+just cost = sum - max (in the range)
+
+Neat.
+
+The performance diff is crazy
+
+ruby - 406ms, 242mb
+go   -   0ms,  11mb 
