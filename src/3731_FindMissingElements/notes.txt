@@ -1,0 +1,6 @@
+2025-11-04
+
+It does not make sense to write it in one line
+here but I just wanted to.
+
+Ruby is so convinient with how you can diff sets like that so kool.
