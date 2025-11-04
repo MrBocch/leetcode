@@ -1,0 +1,14 @@
+2025-11-04
+
+This is what you call, write once, never read again lol.
+
+How would you do this in go?
+
+You slide window, but every time you slide, don't create a
+new hashmap over and over, just remove the old item, and add the new item.
+
+Also, instead of using a hashmap to keep tally, what if instead you used
+a heap, to track what is the most frequent K item?
+
+Have no experience with heaps, should come back to this.
+(rewrite in Go using a heap)
