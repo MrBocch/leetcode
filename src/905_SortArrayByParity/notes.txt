@@ -3,3 +3,14 @@
 
 wanted to solve this imperativly in C 
 but i think i forgor how to code in C (skull emoji)
+
+(2025-11-9)
+
+Funny that i come back the same month 2 years later.
+Uiua and the whole combinator stuff is very interesting.
+
+The glyphs really aren't that intimidating once you map
+the symbol with its name.
+
+this page is really useful for visualizing combinators.
+- https://www.uiua.org/docs/combinators
