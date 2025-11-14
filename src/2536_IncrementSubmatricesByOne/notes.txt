@@ -1,0 +1,19 @@
+2025-11-14
+
+Who do you do this without brute forcing it?
+
+my solution: 482ms
+
+average: [6ms - 49ms]
+
+
+Hint: Prefix sum
+
+what?
+
+There are two ways of solving this.
+
+My solution trades time for space.
+The (other) solution trades space for time. 
+
+Read the hints still can't visualize the solution. coming back to this.
