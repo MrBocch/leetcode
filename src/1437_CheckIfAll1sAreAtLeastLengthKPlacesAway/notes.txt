@@ -1,0 +1,4 @@
+2025-11-17
+
+One of the rare times, I prefer the go solution
+instead of the ruby solution. 
