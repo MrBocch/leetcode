@@ -1,0 +1,12 @@
+2025-11-18
+
+Pattern matching in scala is cool,
+but it does not compare to haskell.
+
+isOneBitCharacters [0]      = True
+isOneBitCharacters [1,0]    = False
+isOneBitCharacters [1,1]    = False
+isOneBitCharacters (0:xs)   = isOneBitCharacters xs
+isOneBitCharacters (1:_:xs) = isOneBitCharacters xs
+
+isn't that so cool? 
