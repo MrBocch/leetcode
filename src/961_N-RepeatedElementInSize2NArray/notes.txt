@@ -1,0 +1,39 @@
+2026-01-03
+
+I first tried to write tally just like the AOC day3
+
+```
+tally :: M.Map Int Int -> [Int] -> M.Map Int Int
+tally m [] = m
+tally m (x:xs) = if M.member x m
+                 then tally (M.adjust (+1) x m) xs 
+                 else tally (M.insert x 1 m) xs
+```
+
+```
+val tally = nums.foldLeft (Map[Int, Int]()) ((tally, n) => 
+    if tally.contains(n) then 
+        tally.map((a,b) => if a == n then (a, b+1) else (a, b))
+    else 
+        tally + (n -> 1))    
+```
+
+but its too slow. This version of creating a tally is slow because
+        tally.map((a,b) => if a == n then (a, b+1) else (a, b))
+        tally + (n -> 1))    
+
+not quite sure why.
+
+Maps in scala is immutable unless you import the mutable version.
+
+tally.updateWith(n)
+
+is faster because apparently its using a HAMT's (Hash Array Mapped Trees)
+so in a update, it reuses some of the memory instead of starting from
+scratch in the former?
+but how can you say it's still immutable? 
+
+very interesting must come back to this.
+
+what is this (structural sharing internally)?
+ 
