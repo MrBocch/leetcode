@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 def get_digits():
     os.chdir("../src")
+    print(os.listdir())
     ns = [ int(n.split("_")[0][0]) for n in os.listdir() ]
     return ns
 
