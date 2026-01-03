@@ -37,3 +37,4 @@ very interesting must come back to this.
 
 what is this (structural sharing internally)?
  
+"structural sharing != HAMT"
