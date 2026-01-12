@@ -1,0 +1,3 @@
+2026-01-12
+
+Seems easy enough to do in Uiua. (need a little time)
