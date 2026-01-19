@@ -1,0 +1,54 @@
+2026-01-19
+
+Thought this problem was neat because I could reuse the tally code
+from 961.
+
+Time complexity is O(n) but its actually very slow, 1105ms slow, the fastest
+is 40ms.
+
+The fastest scala not functional and makes use of mutations.
+
+What he does is, makes a 26 long array, (for each letter in the alphabet), fills it with 0's
+Iterates over the string, converts letter to idx 'a' -> 0, 'b' -> 1 ...
+then adds +1 to array[idx]
+
+iterates over string again, if array[c] == 1 then return idx
+
+(im just such a fan of immutability now)
+I'll try rewriting making more use of mutability, to compare for speed.
+
+scala does not support breaking out of loops & returning early, this makes
+things annoying if im writing imperatively.
+
+So I replaced the recursion with this
+
+var ans = -1
+var flag = true
+for ((chr, idx) <- s.zipWithIndex) {
+    if (flag && tally(chr) == 1) { 
+        ans = idx
+        flag = false
+    }
+}
+
+ans 
+
+And its down to 226ms,
+From 1000ms to 226ms is a lot!
+
+Instead of zipWithIndex, just have a var idx,
+down to 190ms. 
+
+Another reason why my code is slow is, a hashmap
+is not really needed.
+
+Swaped the HashMap with Array, obviously mutating
+and array in place is faster. but the solution
+is now 51ms. Its a big jump.
+
+Could also chr - 'a' == 0
+
+I realized that, I don't know how to write fast functional code.
+
+
+
