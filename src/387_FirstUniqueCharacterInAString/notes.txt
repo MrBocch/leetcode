@@ -49,6 +49,7 @@ is now 51ms. Its a big jump.
 Could also chr - 'a' == 0
 
 I realized that, I don't know how to write fast functional code.
-
+Ought to ask chatgpt to solve this functionaly with immutability,
+and compare how much more faster code can it write.
 
 

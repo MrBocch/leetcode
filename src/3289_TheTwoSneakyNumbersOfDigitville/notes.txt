@@ -9,4 +9,11 @@ solve if had no hashmap only arrays.
 
 (dont know much uiua currently but this is probably how right? a sliding window)
 
+In elixir, is there a difference between calling
+Enum.filter(...)
+Map.filter(...)
 
+Enum.keys
+Map.keys
+
+? 
