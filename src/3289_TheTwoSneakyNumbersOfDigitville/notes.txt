@@ -15,5 +15,14 @@ Map.filter(...)
 
 Enum.keys
 Map.keys
+Just looked at the repl they are different, I think prefer to use
+the explicit to Map.filter.
 
-? 
+Asked chaptgpt and it said you can also do it like this
+
+def get_sneaky_numbers(nums) do
+  for {k, 2} <- Enum.frequencies(nums), do: k
+end
+
+WHAT!!! WOW!, was dissapointed to see the lame syntax
+for lambda function but wow, that totally makes up for it.
