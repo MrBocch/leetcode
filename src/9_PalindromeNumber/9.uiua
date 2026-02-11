@@ -1,1 +1,1 @@
-isPalidrome ← ≍ ⟜⇌
+isPalidrome ← ≍ ⟜⇌ $"_"
