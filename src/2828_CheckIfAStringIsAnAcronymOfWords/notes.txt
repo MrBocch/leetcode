@@ -1,0 +1,9 @@
+2026-02-14
+
+Not a fan of this function literal stuff
+&Module.fuction/arity
+why is it needed?
+
+in haskell this would be
+isAcronym words s = s == map head words
+(how would you do this point free?)
