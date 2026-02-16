@@ -11,6 +11,9 @@ than going bottom down?
 tried the recursive val + min(left, right) solution
 why is that slower than this? I don't get it. Im not seeing it.
 
+Also, how do you meemoize this? 
+check if trig[i][j] is in some kind of table? 
+
 func min(a int, b int) int {
     if a < b { return a }
     return b 
