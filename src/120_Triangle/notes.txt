@@ -1,0 +1,33 @@
+2026-02-15
+
+The code looks real nice when you mutate the input,
+how would you do it without mutation of the input?
+
+Also, had to look at a neetcode video.
+
+I don't understand why going bottom up, is better
+than going bottom down?
+
+tried the recursive val + min(left, right) solution
+why is that slower than this? I don't get it. Im not seeing it.
+
+func min(a int, b int) int {
+    if a < b { return a }
+    return b 
+}
+
+func minimumTotal(triangle [][]int) int {
+
+    var recur func(i int, j int) int 
+    recur = func(i int, j int) int {
+        val := triangle[i][j]
+        if i + 1 < len(triangle) {
+            return val + min(recur(i+1, j), recur(i+1, j+1))
+        }
+        return val
+    }
+    if len(triangle) == 1 { return triangle[0][0]}
+    return triangle[0][0] + min(recur(1, 0), recur(1, 1))
+}
+
+Need to level up
