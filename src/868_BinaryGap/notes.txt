@@ -1,0 +1,8 @@
+2026-02-22
+
+Isn't pattern matching so hot?
+
+How would you do this without converting n into a binary list?
+
+Bit tricks!
+
