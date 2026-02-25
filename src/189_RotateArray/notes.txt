@@ -8,3 +8,38 @@ The brute force solution is both, in place and O(1) space but its
 O(n^2) time. It wont even pass the last 2 test cases.
 
 How can we get the benefits of both solutions? 
+
+(2026-02-24)
+So I just so happened to read the second chapter of
+
+ Programming Pearls
+
+And look at what I found
+
+"Rotate a one-dimensional vector of n elements left by / positions. For instance,
+ with n=8 and /=3, the vector abcdefgh is rotated to defghabc. Simple code uses an
+ n-element intermediate vector to do the job in n steps. Can you rotate the vector
+ in time proportional to n using only a few dozen extra bytes of storage"
+
+I thought, "HEY! that is exactly rotate array from leetcode problem"
+
+well I read some more and.
+
+"The problem looks hard until you finally have the aha! insight: let's view the
+ problem as transforming the array ab into the array ba, but let's also assume that we
+ have a function that reverses the elements in a specified portion of the array. Starting
+ with ab, we reverse a to get arb, reverse b to get arbr, and then reverse the whole
+ thing to get (arbr)r', which is exactly ba. This results in the following code for rota-
+ tion; the comments show the results when abcdefgh is rotated left three elements."
+
+Just WOW! it even mentions Kernighan and Ken Thompson.
+
+"Brian Kernighan and P. J. Plauger used precisely this code
+ in their 1981 Software Tools in Pascal to move lines within a text editor. Kernighan
+ reports that it ran correctly the first time it was executed, while their previous code for
+ a similar task based on linked lists contained several bugs. This code is used in sev-
+ eral text processing systems, including the text editor with which I originally typed
+ this column. Ken Thompson wrote the editor and the reversal code in 1971, and
+ claims that it was part of the folklore even then."
+
+There is so much knowledge out there just waiting to be found. 
