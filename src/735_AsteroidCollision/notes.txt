@@ -1,0 +1,16 @@
+2026-03-02
+
+Pretty neat right?
+
+I have to think a little when going down the logic for solver
+
+Saw someone else write something similar but they used a foldr
+I think it looks nicer because the syntax for lists is kinda ugly imho.
+
+return foldr(asteroids, [], &solver/2)
+
+solver :: integer -> [integer] -> integer
+
+all the logic would remain the same justs without all the ugly fluf
+
+Want to also do this in golang, implementing my own stack.
