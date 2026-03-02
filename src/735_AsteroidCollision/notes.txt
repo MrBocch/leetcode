@@ -14,3 +14,5 @@ solver :: integer -> [integer] -> integer
 all the logic would remain the same justs without all the ugly fluf
 
 Want to also do this in golang, implementing my own stack.
+I remember implementing a stack in C through using a dynamic array.
+Feel like i write the worst go code possible
