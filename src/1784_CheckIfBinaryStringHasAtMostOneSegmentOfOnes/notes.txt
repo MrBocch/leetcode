@@ -1,2 +1,5 @@
 2026-03-06
 
+the description was confusing
+
+I don't know how to split a array in uiua
