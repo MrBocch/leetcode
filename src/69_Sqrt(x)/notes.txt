@@ -1,0 +1,21 @@
+2026-03-05
+
+Rereading through SICP and thought I should apply this for sqrt.
+I totally forgot I've seen this for my numerical analysis class, wrote
+this in ruby and displayed in some pretty table (cli-table)
+
+haskel version
+```
+sqrt x = sqrt' x 1.0 
+  where 
+    sqrt' x guess = if good_enough (abs ((guess * guess) - x))
+	                then guess
+    	            else sqrt' x (improve guess)
+    good_enough = (>) 0.001
+    improve guess = ((x / guess) + guess ) / 2 
+```
+
+It is so clever to use binary search to find the sqrt, why din't
+i think of that?
+
+Should try it in go
