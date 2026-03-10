@@ -1,0 +1,20 @@
+2026-03-10
+
+I first thought a reduce XOR would
+end up with a unique number but thats
+not true. IS there any combination of logic gates
+that would result with a unique number?
+
+This only works because
+
+n == nums.length
+nums[i].length == n
+
+How else would you do this without candor diagonal?
+Map to Int, sort, from lowest to biggest find 
+missing number
+n + 1 != nums[i+1]
+
+then just return that as a binary string? 
+yup,  Hoe efficient is (--) on lists?
+Is it converting it into sets? 
