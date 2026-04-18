@@ -1,0 +1,7 @@
+2026-04-18
+
+I would have thought leetcode would support
+ocaml.
+
+None of these languages support point free programming, very sad.
+
