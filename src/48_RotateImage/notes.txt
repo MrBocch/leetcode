@@ -4,3 +4,19 @@ Wouldn't have realized you had to transpose
 until read a hint, pretty neat.
 
 Does image software use this? 
+
+I just realized that
+```go
+for i := 0 ... {
+	for j := 0 ; ...
+		if j <= i { continue }
+		...
+}
+```
+
+is really silly to do.
+couldn't you
+j := i + 1.....
+wasting cycles for no reason.
+
+Do you think a compiler would make this optimization?
