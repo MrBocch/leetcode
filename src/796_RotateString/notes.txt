@@ -1,0 +1,18 @@
+2026-05-04
+
+Thought process was, I want to check
+that if this circular linked list is the
+same as this other circular linked list
+where
+"abc" == a -> b -> c 
+		 ^         |
+		 |         |
+		 +---------+
+
+
+But there is this much clever solution.
+(s+s) includes every possible rotation.
+so return
+	(s+s).include?(goal)
+
+peak.
