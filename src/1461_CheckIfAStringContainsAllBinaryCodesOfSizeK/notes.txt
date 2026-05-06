@@ -1,0 +1,5 @@
+2026-05-06
+
+Try implementing same solution in elixir but
+I now expect all functional languages to work and look
+just like haskell, which is silly. 
