@@ -3,3 +3,13 @@
 Try implementing same solution in elixir but
 I now expect all functional languages to work and look
 just like haskell, which is silly. 
+
+Would a speed up be
+....
+.map(&:join)
+.uniq       | .tally
+            | .keys
+.length
+.==(2**k)
+
+Must depend on how uniq is implemented? 
