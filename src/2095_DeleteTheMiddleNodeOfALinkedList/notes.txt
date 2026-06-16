@@ -9,3 +9,9 @@ that nobody references it so it frees it?
 Golang does not have a refrence counting gc.
 
 Should study gc some day.  
+
+Wrote the fast/slow pointer, wow!
+The code is so much simpler and beautiful.
+
+Beautiful algorithms are always
+a pleasure to write.
