@@ -1,0 +1,5 @@
+2026-06-18
+
+In haskell you can write
+
+largetsAltitude = maximum . scanl (+) 0 
