@@ -1,0 +1,17 @@
+2026-06-15
+
+Should write the fast/slow pointer also.
+
+Also, do I not need to 'free' the node after
+removing it or does the garbage collector realize
+that nobody references it so it frees it?
+
+Golang does not have a refrence counting gc.
+
+Should study gc some day.  
+
+Wrote the fast/slow pointer, wow!
+The code is so much simpler and beautiful.
+
+Beautiful algorithms are always
+a pleasure to write.
