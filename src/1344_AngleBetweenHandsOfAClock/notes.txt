@@ -1,0 +1,16 @@
+2026-06-20
+
+Quite the mathy problem.
+
+The code isn't quite clear on what its exactly doing.
+
+On line 8 i actually wrote
+
+```go
+hHand += (float64(minutes) / 60) * 6 * 6
+```
+And it gave me answers that were just 2-3 degrees of the actuall answer.
+Figured this part of the code must be causing issues because
+when ever min = 0, the answer was correct.
+
+Just guessed that I should try 5 instead of 6. Funny. 
