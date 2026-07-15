@@ -1,0 +1,30 @@
+2026-07-14
+
+Initially tried
+
+def array_rank_transform(arr)
+  ranks = arr.uniq.sort.zip(1..).map{|a,b| {a=>b}}.reduce(:merge)
+
+  arr.map{|n| ranks[n]}
+end
+
+But its too slow.
+Had no idea ruby had infinite lists. Neat.
+
+Maybe you can chage 
+
+.map{|a,b| {a=>b}}.reduce(:merge)
+
+to a concatMap ? 
+
+Asked chatgpt, it said to just use #.to_h ....
+
+# @param {Integer[]} arr
+# @return {Integer[]}
+def array_rank_transform(arr)
+  ranks = arr.uniq.sort.zip(1..).to_h
+
+  arr.map{|n| ranks[n]}
+end
+
+Ruby is peak.
