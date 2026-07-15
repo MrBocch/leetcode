@@ -1,0 +1,8 @@
+2026-07-14
+
+I thought I was so clever for using lazy lists.
+
+Knowing math always pays.
+
+Remembered ruby had a GCD method because I saw it in a
+code_report video.
