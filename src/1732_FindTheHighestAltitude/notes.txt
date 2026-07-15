@@ -3,3 +3,13 @@
 In haskell you can write
 
 largetsAltitude = maximum . scanl (+) 0 
+
+Today it just came to me that I could have written
+
+&Kernel.+/2
+
+instead of
+
+&(&1 + &2)
+
+Ughhhh
