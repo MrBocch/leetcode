@@ -1,0 +1,8 @@
+2026-07-27
+
+Just how functional is rust?
+
+If one didn't care for memory safety or performance
+just cloned and copy everywhere, how functional
+and pretty can rust be?
+
