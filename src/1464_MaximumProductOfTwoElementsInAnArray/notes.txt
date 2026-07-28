@@ -1,0 +1,4 @@
+2026-07-27
+
+I love this .map(&:method) thing.
+Ruby is so pretty.
