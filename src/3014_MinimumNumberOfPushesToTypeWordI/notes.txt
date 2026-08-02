@@ -1,0 +1,7 @@
+2026-08-02
+
+Looked at my first solution and realized that
+
+> All letters in `word` are distinct.
+
+Not smart enough to figure out the O(1) calculation yet.
