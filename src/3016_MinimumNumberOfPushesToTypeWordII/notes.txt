@@ -1,0 +1,6 @@
+2026-08-02
+
+Im so rusty from not coding.
+
+What makes my code slow must be deleting
+from the tally in a loop right?
