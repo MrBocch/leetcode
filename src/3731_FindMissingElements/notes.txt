@@ -4,3 +4,6 @@ It does not make sense to write it in one line
 here but I just wanted to.
 
 Ruby is so convinient with how you can diff sets like that so kool.
+
+(2026-08-03)
+How exactly does the leetcode daily work? 
