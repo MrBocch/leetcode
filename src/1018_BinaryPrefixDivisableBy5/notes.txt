@@ -1,0 +1,21 @@
+2026-08-10
+
+I was vaguely concerned but I thought it would be ok
+since it was an easy, concerned about about shifting the
+number too much that it wraps around.
+
+If only you thought a little.
+1 <= nums.length <= 10^5
+
+10^5 is bigger than 64 (uint64)
+
+But you thought 10^5 < 2**64
+
+Silly me.
+
+Racket (no modulo arithmetic) | 203ms | 170mb
+golang (modulo arithmetic)    | 0ms   | 7.7mb
+Racket (modulo arithmetic)    | 0ms   | 130mb
+
+racket v1 must have been really slowed down by having
+to allocate bignums over and over.
