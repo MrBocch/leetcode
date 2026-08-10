@@ -1,0 +1,10 @@
+2026-08-10
+
+Lisp is fun.
+
+What I see from lisp is,
+Haskell but you,
+- remove the type system
+- add sexp
+
+I will dive into lisp eventually.
