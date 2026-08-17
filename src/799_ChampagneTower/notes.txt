@@ -1,0 +1,21 @@
+2026-08-17
+
+What a fun problem.
+
+First I was mixing up excess with how full a cup is.
+
+
+\__/ | \__/
+ |   /
+ |  /
+\__/  \__/ \__/ 
+
+Then it was too slow on big inputs, so then memoized.
+
+Utilizinga closure, its like embedding a function within a
+environment.
+
+Memoize by embedding a function in an environment where
+a cache is stored. 
+
+This is Top Down DP?
