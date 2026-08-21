@@ -8,6 +8,7 @@ in haskell this would be
 isAcronym words s = s == map head words
 (how would you do this point free?)
 
+(2026-08-21)
 Its
 ```haskell
 
