@@ -1,0 +1,14 @@
+2026-08-21
+
+Using a cons lists for quick look up
+of the last element, then at the end
+reversing is supper cool.
+
+I really don't like the ... stuff.
+- car
+- cdr
+- cadr
+- cddr
+
+Im sure theres a reason for it.
+
