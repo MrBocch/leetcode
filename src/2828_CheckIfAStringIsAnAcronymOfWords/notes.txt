@@ -7,3 +7,20 @@ why is it needed?
 in haskell this would be
 isAcronym words s = s == map head words
 (how would you do this point free?)
+
+Its
+```haskell
+
+isAcronym :: [String] -> String -> Bool
+isAcronym = zebraDove (==) (map head)  
+
+zebraDove f g a b = f (g a) b
+```
+
+head on a String       ; returns a Char
+map head on a [String] ; returns a [Char]
+[Char]                 ; is a String
+
+quite clever right? 
+
+Too clever.
