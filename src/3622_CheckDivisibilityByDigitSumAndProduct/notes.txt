@@ -1,0 +1,5 @@
+2026-08-24
+
+I much rather use (define) for local bindings
+over (let []) forms
+
