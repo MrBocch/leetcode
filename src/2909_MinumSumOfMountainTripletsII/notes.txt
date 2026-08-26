@@ -1,0 +1,42 @@
+2026-08-26
+
+Its unfortunate I have to define my own
+
+- scanl
+- scanl1
+- scanr
+- scanr1
+- zip3
+- sum 
+
+Still, quite fun!
+
+This definition for sum
+(apply + xs)
+is quite freaky.
+
+Do you think its
+(apply f '(1 2 3 4...)') -> (f 1 2 3 4....) ?
+
+pattern matching is great.
+
+Learned of transducers from "janetacar".
+
+(i think her last name is just a reference to lisp)
+
+I would explain transducers as, chaining filters
+maps reducers but without creating intermediate data structures.
+
+xs
+|> filter p
+|> map f
+|> reduce r
+
+Creates two intermediate data structures that we only
+use to feed to the next function.
+
+Not only do we avoid creating intermediate data structures,
+we also do the entire thing in one pass.
+We filter, map, reduce all in one pass. 
+
+Functional bros stay up.
