@@ -1,0 +1,39 @@
+2026-08-28
+
+I feel like checking if (n == 1 or n == 7)
+is cheating because,
+
+I don't know if every number possible
+would eventually converge to a single digit
+number.
+
+This feels like that collatz thing.
+
+How do you know, there isn't some number out there
+that will loop without ever reaching the single digit numbers?
+
+Unless there is some proof but im not a mathmatician,
+
+You are a programmer, so you would instead write functionality
+for checking if you are in a loop instead.
+
+```
+(define (thing n)
+  (define cache (mutable-set))
+  (define (seen? n) (set-member? cache n))
+  (define (loop n)
+	  (cond
+		  [(seen? n) (= n 1)]
+		  [else
+			  (set-add! cache n)
+			  (loop (step n))]))
+
+  (loop n))
+```
+
+Used a closure, because racket is not pure,
+I can define loop to not take in the set of last
+seen numbers because we will be updating the cache
+within the closure.
+
+neat
