@@ -1,0 +1,42 @@
+2026-08-28
+
+The whole λ thing is cute.
+
+This would be so much nicer if I had this macro
+
+(-> arr
+	(sort _ <)
+	(sliding-window 2 _)
+	(map (λ(xs)(apply - xs))) ;; map difference
+	(apply = _))              ;; all-eq?
+
+I haven't learned a thing about macros yet.
+How hard can it be a implement this?
+
+Also in racket they seem to use a different ordering
+from haskell.
+
+So for functions that racket and haskell both share
+
+drop
+take
+
+racket
+ (drop xs n)
+ (take xs n)
+
+haskell
+ drop n xs 
+ take n xs
+
+I asked gpt, how it would implement a sliding-window function,
+it wrote
+ (define (sliding-window xs k))
+
+Why do they do this?
+In haskell it makes sense to use that order because functions
+all functions are curried and utilizing (.). Its clear.
+
+I don't get why racket (or lisp) choses that ordering?
+
+Why is the convention different? 
