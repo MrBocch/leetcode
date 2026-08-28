@@ -36,4 +36,8 @@ I can define loop to not take in the set of last
 seen numbers because we will be updating the cache
 within the closure.
 
-neat
+Just checked some solutions, you could actually
+use the fast/slow pointer to check if you are in a loop.
+
+Wow. I only ever thought to use fast and slow on a list, wowwowwow.
+COOL!
