@@ -1,0 +1,5 @@
+2026-08-29
+
+I'm actually having fun with racket!
+
+Don't know how to write fast code in racket yet.
