@@ -1,0 +1,22 @@
+2026-08-31
+
+My imperative code is so ugly.
+
+Looking at the constraints of the problem
+
+"1 <= Node.val <= 10^5"
+
+Means we can use -1, as a 'not set value'
+a := -1
+b := -1
+c := Node.val
+
+Not a fan. "sentinal values"
+
+Imagine, if this constraint wasn't true.
+What would you do then? 
+
+I would like to use a Maybe int, but golang....
+
+would have to use a (int, error) ? 
+
