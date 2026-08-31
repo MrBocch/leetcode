@@ -1,0 +1,5 @@
+2026-08-30
+
+I really ought to learn rackets
+standard library instead of implementing
+everything myself, but this is also fun.
