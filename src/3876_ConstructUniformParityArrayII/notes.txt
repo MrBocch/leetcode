@@ -1,0 +1,25 @@
+2026-09-02
+
+so theres
+- andmap even? nums1
+- andmap odd? nums2
+- apply min (filter even? nums1)
+- apply min (filter odd? nums1)
+
+Iterating over the list over and over again.
+
+In one pass, we do a lot of fp no-no's
+
+mixing types around.
+for loop.
+mutations.
+
+It was faster doe.
+
+The previous (Construct Uniform Parity Array I), has a really
+elegant solution.
+The elegant solution here is;
+- or (all? even nums)
+     (odd? (minimum nums))
+
+odd? minimum nums ......... beautiful
