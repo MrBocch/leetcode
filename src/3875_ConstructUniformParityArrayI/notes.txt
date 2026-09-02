@@ -1,0 +1,35 @@
+2026-09-01
+
+This was really funny.
+
+So I knew that 
+
+even_number + even_number = even_number
+
+So thought, what about subtraction?
+
+this makes sense
+even_n - even_n = even_n 
+
+what about
+even_n - odd_n = ?
+well, odd_n is just even_n+1, so you'll get a odd_n
+
+it made sense, once I imagined this case
+[2, 4, 6, 7]
+it can't be made into an all even list, because
+odd - even = odd.
+
+but it can be made into an all odd because
+even - odd = odd.
+
+so either the list
+[all even] ; which is true
+[all odd]  ; which is true
+
+[mix of even and odd], and in that case,
+
+They could be turned into all even or all odd.
+
+This is why it is so important, to first analyze the problem than to
+touch the keyboard.
