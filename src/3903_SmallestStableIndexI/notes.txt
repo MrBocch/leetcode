@@ -1,0 +1,8 @@
+2026-09-03
+
+Checked docs, indexes-where, is thing.
+So is running-foldl but the packages
+is not available -_-.
+
+See how often I reuse functions
+when you write in a functional way.
