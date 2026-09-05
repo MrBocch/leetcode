@@ -1,0 +1,18 @@
+2026-09-04
+
+Super conscious about how
+many times we are iterating
+over the list.
+
+- (reverse digits)
+- (count =x? digs)
+
+Its possible to do this in
+O(1) space but... doing that
+means I can't reuse the digits
+function.
+
+What if I had a iterator? 
+digits instead of returning a
+list, it instead returns a
+iterator over the 'list'? 

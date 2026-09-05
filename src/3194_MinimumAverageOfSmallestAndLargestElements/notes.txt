@@ -1,0 +1,6 @@
+2026-09-04
+
+I look at other people's solution in racket and...
+they write totally different code to what I write.
+
+why? 
