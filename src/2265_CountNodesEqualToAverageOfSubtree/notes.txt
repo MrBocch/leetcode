@@ -1,0 +1,10 @@
+2026-09-11
+
+Its really cool how the struct Info just
+bubbles up with everything we want to know.
+
+At first I was checking for if leafNode(root)
+but gpt, said it's unnecessary because that
+cases is already covered. I wrote it in without realizing. 
+
+Don't like the idea of using gpt after the whole Navier Stroke thing.
