@@ -1,0 +1,7 @@
+2026-09-14
+
+I've dont box collision before, when I was playing around with
+love2d. I forgot how I wrote it doe.
+
+Thought it was much simpler asking if they don't collide then
+return the inverse.
