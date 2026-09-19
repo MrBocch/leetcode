@@ -1,0 +1,8 @@
+2026-09-18
+
+Fun.
+
+Remember reading a tweet by the creater of homebrew.
+He couldn't invert a binary tree. Everyone made
+fun of him but at the time 'invert a binary tree' sounded
+very intimidating to me. 
