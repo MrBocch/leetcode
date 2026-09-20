@@ -1,0 +1,12 @@
+2026-09-20
+
+Instead of simulating things. You could just
+count 'L', 'R', '_'. Downside is you have to traverse
+the list several times. 
+
+You could, just traverse manually.
+(cond
+ [(empty? xs) (list lcount rcount _count)]
+ [(char=? \#L c) (traverse xs (+1 lcount) rcount _count)]
+
+There's only 50 moves so we likely won't see any diff.
