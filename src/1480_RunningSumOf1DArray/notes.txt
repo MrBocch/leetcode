@@ -1,0 +1,10 @@
+2026-09-19
+
+I actually solved this back in Oct 29, 2022
+this was before I uploaded all my solutions to github.
+wow.
+
+Wrote it in python because that was the language I was most
+comfortable with at the time. Wow. Crazy
+
+Watching code_report really changed how I write code today.
