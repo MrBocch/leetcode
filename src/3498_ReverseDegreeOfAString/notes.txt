@@ -1,0 +1,4 @@
+2026-09-19
+
+Would it be faster if you don't create
+3 intermediate lists? 
