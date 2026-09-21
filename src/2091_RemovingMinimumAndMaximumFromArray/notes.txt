@@ -1,0 +1,7 @@
+2026-09-21
+
+I think i prefer the let* in syntax now.
+dont have to write define over and over again.
+
+Could probably be faster don't index-of-f twice
+but instead just for loop over it.
