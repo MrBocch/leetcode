@@ -1,0 +1,22 @@
+2026-09-23
+
+index-of returns the first index of a value
+in list, In the case its not within the list
+it returns a #f.
+
+(or (index-of ziped #t) -1)))
+
+First I thought, using a (cond) just to catch
+a (#f? -1) was quite unelegant. Wished index-of
+instead returned a Mayba[a] so I could something like
+
+fromMaybe -1 (index-of ziped #t) 
+
+But then I remembered I'ved seen this before in Lua.
+
+In lua i encountered something like this before. But
+lua isn't typed also so they used, 'short circuit evaluation'
+Pretty neat but I still rather have type's
+
+or #f -1 => -1
+or n  -1 => n
