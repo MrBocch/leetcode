@@ -1,0 +1,8 @@
+2026-09-24
+
+I did not consider the worst case scenario of
+having a big list, and X being being bigger than the sum.
+
+I thought the BFS solution was so neat when I drew it up.
+
+How do I properly do this? 
