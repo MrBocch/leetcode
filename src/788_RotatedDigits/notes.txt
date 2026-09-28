@@ -1,0 +1,14 @@
+2026-09-28
+
+Only had to slightly modify digits function.
+
+Figured it made more sense rewrite it a little than to
+use same digits function but, then later count if it had any
+invalid numbers, and count flip nums >= 1. 
+
+Looks uglier doe.
+
+Does rust have a
+for d in num.digits {
+	
+} 
