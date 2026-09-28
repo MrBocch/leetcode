@@ -19,3 +19,10 @@ string |> filters for '()'
 	   |> max 
 
 Just a different way of thinking.
+
+(2026-9-27)
+
+The code_report certainly has a big influence in how I write code today.
+for the better. imho.
+
+He hasn't uploaded anything recently sadly. See him active on PWC. 

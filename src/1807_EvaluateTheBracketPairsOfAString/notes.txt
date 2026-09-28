@@ -1,0 +1,15 @@
+2026-09-27
+
+Found it much easier to just use a cons list.
+
+I like this particular pattern of 'take-while'
+
+its. take-while xs p?
+
+take-while (1 2 -3 4 5) positive? 
+-> ( (1 2), (4 5))
+
+The first of list is the takeWhile
+but the second is the rest to parse.
+
+idk what you would call this technique. 
