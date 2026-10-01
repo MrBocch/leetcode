@@ -33,3 +33,19 @@ I also dont think we should be so afraid of using `goto` statements
 https://jorenar.com/blog/gotophobia-harmful
 
 I might learn flutter so I decided to learn some dart by revisiting easy leetcode problems. It appears that using a switchcase is 1ms faster.
+
+(2026-09-30)
+
+leetcode says I first attempted in 2022, Oct 30.
+and finally solved it in 2023, Aug 16.
+
+Feel like I haven't made that much progress since then.
+
+I don't like the nested
+(cond ...
+  [else  
+    (cond ...
+	  [else
+	    (cond ...)])])
+
+How do i avoid this? 
