@@ -1,0 +1,8 @@
+2026-10-11
+
+I've realized that you can use the (let*([]))
+as like a kind of pipe operator. Neat.
+
+But its much neater in uiua.
+
+SumOfSquaresSpecial ← /+ⁿ₂▽=₀◿⊸⇡₁⊸⧻
