@@ -1,0 +1,14 @@
+2026-10-13
+
+They are semantically the same solution
+just that uiua you must write it point free.
+
+Funny that uiua, taught me how to write
+point free haskell, and writing point free haskell
+taught me uiua.
+
+When I would try to point free hs for PWC,
+I would always look at
+(https://www.uiua.org/docs/combinators)
+for help.
+
