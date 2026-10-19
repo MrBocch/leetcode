@@ -1,0 +1,7 @@
+2026-10-18
+
+So uiua has the indexin glyph, but it only returns the
+first index of the thing, and if its not there it returns
+the length, bad design imho.
+
+
