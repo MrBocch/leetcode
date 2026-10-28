@@ -1,0 +1,4 @@
+2026-10-28
+
+Instead of using a string builder, would have been better
+to just allocate the whole thing at once.
