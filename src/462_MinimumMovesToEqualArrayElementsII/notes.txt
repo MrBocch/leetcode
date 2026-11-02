@@ -1,0 +1,5 @@
+2026-11-02
+
+So ugly tbh.
+Not sure if you can just take the left median
+when length of list is even.
